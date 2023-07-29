@@ -1,0 +1,2678 @@
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:33:21: style: struct member '__FILE::handle' is never used. [unusedStructMember]
+struct __FILE { int handle; /* Add whatever you need here */ };
+                    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:231:27: style: Redundant condition: If 'EXPR == '\n'', the comparison 'EXPR == '\012'' is always true. [redundantCondition]
+        if(str[i] == '\n' || str[i] == '\012' || str[i] == '\015')  {
+                          ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:239:23: style: Condition 'i>0' is always true [knownConditionTrueFalse]
+                i = (i>0 ? (i-2) : -1 ) ;
+                      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:237:16: note: Assuming condition 'i' is true
+            if(i) { /* erace one char */
+               ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:239:23: note: Condition 'i>0' is always true
+                i = (i>0 ? (i-2) : -1 ) ;
+                      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:239:34: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+                i = (i>0 ? (i-2) : -1 ) ;
+                                 ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 3) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 4) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:172:23: style:inconclusive: Function 'Cyassl_sleep' argument 1 names different: declaration 'sec' definition 't'. [funcArgNamesDifferent]
+void Cyassl_sleep(int t)
+                      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.h:86:30: note: Function 'Cyassl_sleep' argument 1 names different: declaration 'sec' definition 't'.
+extern void Cyassl_sleep(int sec) ;
+                             ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:172:23: note: Function 'Cyassl_sleep' argument 1 names different: declaration 'sec' definition 't'.
+void Cyassl_sleep(int t)
+                      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/main.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 28 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:439:21: style: Condition 'args==NULL' is always false [knownConditionTrueFalse]
+    } else if( args == NULL || ((func_args *)args)->argc == 2) {
+                    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:437:14: note: Assuming that condition 'args==NULL' is not redundant
+    if( args == NULL || ((func_args *)args)->argc == 1) {
+             ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:439:21: note: Condition 'args==NULL' is always false
+    } else if( args == NULL || ((func_args *)args)->argc == 2) {
+                    ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:463:29: style:inconclusive: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'. [funcArgNamesDifferent]
+static void help_comm(void *args)
+                            ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:99:29: note: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'.
+extern void help_comm(void *arg) ;
+                            ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:463:29: note: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'.
+static void help_comm(void *args)
+                            ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:546:7: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    i = BackGround ;
+      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:371:23: style: Condition 'BackGround!=0' is always false [knownConditionTrueFalse]
+        if(BackGround != 0) {
+                      ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:449:28: style:inconclusive: Function 'dbg_comm' argument 1 names different: declaration 'arg' definition 'args'. [funcArgNamesDifferent]
+static void dbg_comm(void *args)
+                           ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:98:28: note: Function 'dbg_comm' argument 1 names different: declaration 'arg' definition 'args'.
+extern void dbg_comm(void *arg) ;
+                           ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/shell.c:449:28: note: Function 'dbg_comm' argument 1 names different: declaration 'arg' definition 'args'.
+static void dbg_comm(void *args)
+                           ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/ssl-dummy.c:34:13: error: Uninitialized variable: s [uninitvar]
+    return  s ;
+            ^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/ssl-dummy.c:33:12: style: Variable 's' is not assigned a value. [unassignedVariable]
+    Signer*s ;
+           ^
+IDE/MDK5-ARM/Projects/CryptBenchmark/benchmark.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 39 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CryptBenchmark/benchmark.c:959:9: error: Resource leak: file [resourceLeak]
+        return;
+        ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 70 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:357:31: style: Condition '(ret=hc128_test())!=0' is always false [knownConditionTrueFalse]
+    if ( (ret = hc128_test()) != 0)
+                              ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:193:31: warning: Either the condition 'msg' is redundant or there is possible null pointer dereference: msg. [nullPointerRedundantCheck]
+    printf("%s error = %d\n", msg, es);
+                              ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:195:8: note: Assuming that condition 'msg' is not redundant
+   if (msg)
+       ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:193:31: note: Null pointer dereference
+    printf("%s error = %d\n", msg, es);
+                              ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2802:38: warning: Either the condition '!file' is redundant or there is possible null pointer dereference: file. [nullPointerRedundantCheck]
+    bytes = fread(tmp, 1, FOURK_BUF, file);
+                                     ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2798:9: note: Assuming that condition '!file' is not redundant
+    if (!file)
+        ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2802:38: note: Null pointer dereference
+    bytes = fread(tmp, 1, FOURK_BUF, file);
+                                     ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2803:12: warning: Either the condition '!file' is redundant or there is possible null pointer dereference: file. [nullPointerRedundantCheck]
+    fclose(file);
+           ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2798:9: note: Assuming that condition '!file' is not redundant
+    if (!file)
+        ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:2803:12: note: Null pointer dereference
+    fclose(file);
+           ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:4043:15: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    if ( (ret = memcmp(derived, verify2, 24)) != 0)
+              ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:3195:13: error: Resource leak: pemFile [resourceLeak]
+            return -415;
+            ^
+IDE/MDK5-ARM/Projects/CryptTest/test.c:3332:13: error: Resource leak: pemFile [resourceLeak]
+            return -5415;
+            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/benchmark.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 37 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/benchmark.c:933:9: error: Resource leak: file [resourceLeak]
+        return;
+        ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/client.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:80:14: style: Condition 'argc>=2' is always false [knownConditionTrueFalse]
+    if (argc >= 2) {
+             ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:80:14: note: Condition 'argc>=2' is always false
+    if (argc >= 2) {
+             ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:84:14: style: Condition 'argc>=3' is always false [knownConditionTrueFalse]
+    if (argc >= 3) {
+             ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoclient.c:84:14: note: Condition 'argc>=3' is always false
+    if (argc >= 3) {
+             ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:141:15: style: The comparison 'doPSK == 0' is always true. [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:83:20: note: 'doPSK' is assigned value '0' here.
+    int    doPSK = 0;
+                   ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:141:15: note: The comparison 'doPSK == 0' is always true.
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:141:15: style: Condition 'doPSK==0' is always false [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:110:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:141:15: note: Condition 'doPSK==0' is always false
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:191:9: style: Condition 'doPSK' is always true [knownConditionTrueFalse]
+    if (doPSK) {
+        ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:110:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/echoserver.c:191:9: note: Condition 'doPSK' is always true
+    if (doPSK) {
+        ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/server.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 27 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 28 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:444:21: style: Condition 'args==NULL' is always false [knownConditionTrueFalse]
+    } else if( args == NULL || ((func_args *)args)->argc == 2) {
+                    ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:442:14: note: Assuming that condition 'args==NULL' is not redundant
+    if( args == NULL || ((func_args *)args)->argc == 1) {
+             ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:444:21: note: Condition 'args==NULL' is always false
+    } else if( args == NULL || ((func_args *)args)->argc == 2) {
+                    ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:468:29: style:inconclusive: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'. [funcArgNamesDifferent]
+static void help_comm(void *args)
+                            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:103:29: note: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'.
+extern void help_comm(void *arg) ;
+                            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:468:29: note: Function 'help_comm' argument 1 names different: declaration 'arg' definition 'args'.
+static void help_comm(void *args)
+                            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:598:7: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    i = BackGround ;
+      ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:376:23: style: Condition 'BackGround!=0' is always false [knownConditionTrueFalse]
+        if(BackGround != 0) {
+                      ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 63 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:357:31: style: Condition '(ret=hc128_test())!=0' is always false [knownConditionTrueFalse]
+    if ( (ret = hc128_test()) != 0)
+                              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:193:31: warning: Either the condition 'msg' is redundant or there is possible null pointer dereference: msg. [nullPointerRedundantCheck]
+    printf("%s error = %d\n", msg, es);
+                              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:195:8: note: Assuming that condition 'msg' is not redundant
+   if (msg)
+       ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:193:31: note: Null pointer dereference
+    printf("%s error = %d\n", msg, es);
+                              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2716:38: warning: Either the condition '!file' is redundant or there is possible null pointer dereference: file. [nullPointerRedundantCheck]
+    bytes = fread(tmp, 1, FOURK_BUF, file);
+                                     ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2712:9: note: Assuming that condition '!file' is not redundant
+    if (!file)
+        ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2716:38: note: Null pointer dereference
+    bytes = fread(tmp, 1, FOURK_BUF, file);
+                                     ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2717:12: warning: Either the condition '!file' is redundant or there is possible null pointer dereference: file. [nullPointerRedundantCheck]
+    fclose(file);
+           ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2712:9: note: Assuming that condition '!file' is not redundant
+    if (!file)
+        ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:2717:12: note: Null pointer dereference
+    fclose(file);
+           ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:3949:15: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    if ( (ret = memcmp(derived, verify2, 24)) != 0)
+              ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:3109:13: error: Resource leak: pemFile [resourceLeak]
+            return -415;
+            ^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/test.c:3246:13: error: Resource leak: pemFile [resourceLeak]
+            return -5415;
+            ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:80:14: style: Condition 'argc>=2' is always false [knownConditionTrueFalse]
+    if (argc >= 2) {
+             ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:80:14: note: Condition 'argc>=2' is always false
+    if (argc >= 2) {
+             ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:84:14: style: Condition 'argc>=3' is always false [knownConditionTrueFalse]
+    if (argc >= 3) {
+             ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+IDE/MDK5-ARM/Projects/EchoClient/echoclient.c:84:14: note: Condition 'argc>=3' is always false
+    if (argc >= 3) {
+             ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 23 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:141:15: style: The comparison 'doPSK == 0' is always true. [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:83:20: note: 'doPSK' is assigned value '0' here.
+    int    doPSK = 0;
+                   ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:141:15: note: The comparison 'doPSK == 0' is always true.
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:141:15: style: Condition 'doPSK==0' is always false [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:110:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:141:15: note: Condition 'doPSK==0' is always false
+    if (doPSK == 0) {
+              ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:191:9: style: Condition 'doPSK' is always true [knownConditionTrueFalse]
+    if (doPSK) {
+        ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:110:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+IDE/MDK5-ARM/Projects/EchoServer/echoserver.c:191:9: note: Condition 'doPSK' is always true
+    if (doPSK) {
+        ^
+IDE/MDK5-ARM/Projects/SimpleClient/client.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Projects/SimpleServer/server.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 27 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:229:27: style: Redundant condition: If 'EXPR == '\n'', the comparison 'EXPR == '\012'' is always true. [redundantCondition]
+        if(str[i] == '\n' || str[i] == '\012' || str[i] == '\015')  {
+                          ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:237:23: style: Condition 'i>0' is always true [knownConditionTrueFalse]
+                i = (i>0 ? (i-2) : -1 ) ;
+                      ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:235:16: note: Assuming condition 'i' is true
+            if(i) { /* erace one char */
+               ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:237:23: note: Condition 'i>0' is always true
+                i = (i>0 ? (i-2) : -1 ) ;
+                      ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:237:34: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+                i = (i>0 ? (i-2) : -1 ) ;
+                                 ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 2) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 3) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+IDE/MDK5-ARM/Src/cyassl_MDK_ARM.c:65:5: warning: %d in format string (no. 4) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+    sscanf(cp, "%d.%d.%d.%d", &a[0], &a[1], &a[2], &a[3]) ;
+    ^
+ctaocrypt/benchmark/benchmark.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 49 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/benchmark/benchmark.c:1093:9: error: Resource leak: file [resourceLeak]
+        return;
+        ^
+ctaocrypt/src/aes.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 46 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/aes.c:882:39: warning: Either the condition '!aes' is redundant or there is possible null pointer dereference: aes. [nullPointerRedundantCheck]
+    __m128i *Key_Schedule = (__m128i*)aes->key;
+                                      ^
+ctaocrypt/src/aes.c:885:21: note: Assuming that condition '!aes' is not redundant
+    if (!userKey || !aes)
+                    ^
+ctaocrypt/src/aes.c:882:39: note: Null pointer dereference
+    __m128i *Key_Schedule = (__m128i*)aes->key;
+                                      ^
+ctaocrypt/src/aes.c:2399:17: style: The scope of the variable 'even' can be reduced. [variableScope]
+            int even ;
+                ^
+ctaocrypt/src/aes.c:2076:22: style: Unused variable: k [unusedVariable]
+        volatile int k ;
+                     ^
+ctaocrypt/src/asm.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 40 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/fp_mul_comba_12.i:122:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[11], at[23]);
+   ^
+ctaocrypt/src/fp_mul_comba_17.i:162:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[16], at[33]);
+   ^
+ctaocrypt/src/fp_mul_comba_20.i:185:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[19], at[39]);
+   ^
+ctaocrypt/src/fp_mul_comba_24.i:218:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[23], at[47]);
+   ^
+ctaocrypt/src/fp_mul_comba_28.i:250:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[27], at[55]);
+   ^
+ctaocrypt/src/fp_mul_comba_3.i:50:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[2], at[5]);
+   ^
+ctaocrypt/src/fp_mul_comba_32.i:296:4: style: Variable 'c2' is assigned a value that is never used. [unreadVariable]
+   MULADD(at[31], at[63]);
+   ^
+ctaocrypt/src/asn.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 57 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/asn.c:576:13: style: Variable 'b' is assigned a value that is never used. [unreadVariable]
+    if ( (b = input[i++]) == 0x00)
+            ^
+ctaocrypt/src/asn.c:3192:19: style: Variable 'count' is assigned a value that is never used. [unreadVariable]
+        int count = 0;
+                  ^
+ctaocrypt/src/asn.c:3725:25: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int length = 0, ret = 0;
+                        ^
+ctaocrypt/src/asn.c:4032:19: style: Variable 'critical' is assigned a value that is never used. [unreadVariable]
+    byte critical = 0;
+                  ^
+ctaocrypt/src/asn.c:7534:14: style: The statement 'if (*idx!=end) *idx=end' is logically equivalent to '*idx=end'. [duplicateConditionalAssign]
+    if (*idx != end)  /* skip extensions */
+             ^
+ctaocrypt/src/asn.c:7535:14: note: Assignment '*idx=end'
+        *idx = end;
+             ^
+ctaocrypt/src/asn.c:7534:14: note: Condition '*idx!=end' is redundant
+    if (*idx != end)  /* skip extensions */
+             ^
+ctaocrypt/src/asn.c:7634:13: style: The statement 'if (idx!=dcrl->sigIndex) idx=dcrl->sigIndex' is logically equivalent to 'idx=dcrl->sigIndex'. [duplicateConditionalAssign]
+    if (idx != dcrl->sigIndex)
+            ^
+ctaocrypt/src/asn.c:7635:13: note: Assignment 'idx=dcrl->sigIndex'
+        idx = dcrl->sigIndex;   /* skip extensions */
+            ^
+ctaocrypt/src/asn.c:7634:13: note: Condition 'idx!=dcrl->sigIndex' is redundant
+    if (idx != dcrl->sigIndex)
+            ^
+ctaocrypt/src/asn.c:5552:25: style: Condition 'der->validitySz==0' is always true [knownConditionTrueFalse]
+    if (der->validitySz == 0) {
+                        ^
+ctaocrypt/src/asn.c:5541:23: note: Assignment 'der->validitySz=0', assigned value is 0
+    der->validitySz = 0;
+                      ^
+ctaocrypt/src/asn.c:5552:25: note: Condition 'der->validitySz==0' is always true
+    if (der->validitySz == 0) {
+                        ^
+ctaocrypt/src/blake2b.c:304:13: style: Same expression on both sides of '-='. [duplicateExpression]
+      inlen -= inlen;
+            ^
+ctaocrypt/src/des3.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/des3.c:759:22: style: Unused variable: k [unusedVariable]
+        volatile int k ;
+                     ^
+ctaocrypt/src/des3.c:430:9: style: The scope of the variable 'bits' can be reduced. [variableScope]
+    int bits ;
+        ^
+ctaocrypt/src/des3.c:377:15: style: Variable 'stat1' is assigned a value that is never used. [unreadVariable]
+        stat1 = MCF_SEC_DSR ;
+              ^
+ctaocrypt/src/des3.c:378:15: style: Variable 'stat2' is assigned a value that is never used. [unreadVariable]
+        stat2 = MCF_SEC_DISR ;
+              ^
+ctaocrypt/src/des3.c:453:12: style: Variable 's5' is assigned a value that is never used. [unreadVariable]
+        s5 = tx_byte_allocate(&mp_ncached,(void *)&secDesc,
+           ^
+ctaocrypt/src/des3.c:455:12: style: Variable 's1' is assigned a value that is never used. [unreadVariable]
+        s1 = tx_byte_allocate(&mp_ncached,(void *)&desBuffIn,  DES_BUFFER_SIZE, TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:456:12: style: Variable 's2' is assigned a value that is never used. [unreadVariable]
+        s2 = tx_byte_allocate(&mp_ncached,(void *)&desBuffOut, DES_BUFFER_SIZE, TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:458:12: style: Variable 's3' is assigned a value that is never used. [unreadVariable]
+        s3 = tx_byte_allocate(&mp_ncached,(void *)&secKey,     DES3_KEYLEN,TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:459:12: style: Variable 's4' is assigned a value that is never used. [unreadVariable]
+        s4 = tx_byte_allocate(&mp_ncached,(void *)&secIV,      DES3_IVLEN,  TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:484:12: style: Variable 's5' is assigned a value that is never used. [unreadVariable]
+        s5 = tx_byte_allocate(&mp_ncached,(void *)&secDesc,
+           ^
+ctaocrypt/src/des3.c:486:12: style: Variable 's1' is assigned a value that is never used. [unreadVariable]
+        s1 = tx_byte_allocate(&mp_ncached,(void *)&desBuffIn,  DES_BUFFER_SIZE, TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:487:12: style: Variable 's2' is assigned a value that is never used. [unreadVariable]
+        s2 = tx_byte_allocate(&mp_ncached,(void *)&desBuffOut, DES_BUFFER_SIZE, TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:488:12: style: Variable 's3' is assigned a value that is never used. [unreadVariable]
+        s3 = tx_byte_allocate(&mp_ncached,(void *)&secKey,     DES3_KEYLEN,TX_NO_WAIT);
+           ^
+ctaocrypt/src/des3.c:489:12: style: Variable 's4' is assigned a value that is never used. [unreadVariable]
+        s4 = tx_byte_allocate(&mp_ncached,(void *)&secIV,      DES3_IVLEN,  TX_NO_WAIT);
+           ^
+ctaocrypt/src/ecc.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/ecc.c:3704:21: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+                if (zB) {
+                    ^
+ctaocrypt/src/ecc.c:3703:18: note: outer condition: zB
+             if (zB && first == 0) {
+                 ^
+ctaocrypt/src/ecc.c:3704:21: note: identical inner condition: zB
+                if (zB) {
+                    ^
+ctaocrypt/src/ecc.c:529:12: style: The if condition is the same as the previous if condition [duplicateCondition]
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:515:12: note: First condition
+   if (err == MP_OKAY) {
+           ^
+ctaocrypt/src/ecc.c:529:12: note: Second condition
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:1531:12: style: The if condition is the same as the previous if condition [duplicateCondition]
+   if (err == 0) {
+           ^
+ctaocrypt/src/ecc.c:1527:12: note: First condition
+   if (err == 0)
+           ^
+ctaocrypt/src/ecc.c:1531:12: note: Second condition
+   if (err == 0) {
+           ^
+ctaocrypt/src/ecc.c:1556:12: style: The if condition is the same as the previous if condition [duplicateCondition]
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:1554:12: note: First condition
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:1556:12: note: Second condition
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:1819:11: style: The if condition is the same as the previous if condition [duplicateCondition]
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:1816:11: note: First condition
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:1819:11: note: Second condition
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:1828:11: style: The if condition is the same as the previous if condition [duplicateCondition]
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:1825:11: note: First condition
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:1828:11: note: Second condition
+  if (err == MP_OKAY)
+          ^
+ctaocrypt/src/ecc.c:2092:12: style: The if condition is the same as the previous if condition [duplicateCondition]
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:2089:12: note: First condition
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:2092:12: note: Second condition
+   if (err == MP_OKAY)
+           ^
+ctaocrypt/src/ecc.c:2488:13: style: The if condition is the same as the previous if condition [duplicateCondition]
+    if (err == MP_OKAY) {
+            ^
+ctaocrypt/src/ecc.c:2484:13: note: First condition
+    if (err == MP_OKAY)
+            ^
+ctaocrypt/src/ecc.c:2488:13: note: Second condition
+    if (err == MP_OKAY) {
+            ^
+ctaocrypt/src/ecc.c:3680:15: style: The if condition is the same as the previous if condition [duplicateCondition]
+          if (!first) {
+              ^
+ctaocrypt/src/ecc.c:3672:15: note: First condition
+          if (!first) {
+              ^
+ctaocrypt/src/ecc.c:3680:15: note: Second condition
+          if (!first) {
+              ^
+ctaocrypt/src/ecc.c:3786:15: style: The if condition is the same as the previous if condition [duplicateCondition]
+      if (err == MP_OKAY) {
+              ^
+ctaocrypt/src/ecc.c:3782:15: note: First condition
+      if (err == MP_OKAY)
+              ^
+ctaocrypt/src/ecc.c:3786:15: note: Second condition
+      if (err == MP_OKAY) {
+              ^
+ctaocrypt/src/ecc.c:2356:37: style: The comparison 'compressed == 0' is always true. [knownConditionTrueFalse]
+   if (err == MP_OKAY && compressed == 0)
+                                    ^
+ctaocrypt/src/ecc.c:2241:21: note: 'compressed' is assigned value '0' here.
+   int compressed = 0;
+                    ^
+ctaocrypt/src/ecc.c:2356:37: note: The comparison 'compressed == 0' is always true.
+   if (err == MP_OKAY && compressed == 0)
+                                    ^
+ctaocrypt/src/ecc.c:989:53: style: The scope of the variable 'bitcnt' can be reduced. [variableScope]
+   int           first = 1, bitbuf = 0, bitcpy = 0, bitcnt = 0, mode = 0,
+                                                    ^
+ctaocrypt/src/ecc.c:990:18: style: The scope of the variable 'digidx' can be reduced. [variableScope]
+                 digidx = 0;
+                 ^
+ctaocrypt/src/ecc.c:2463:14: style: The scope of the variable 'x' can be reduced. [variableScope]
+    int err, x;
+             ^
+ctaocrypt/src/ecc.c:3213:24: style: The scope of the variable 'bitlen' can be reduced. [variableScope]
+   unsigned x, y, err, bitlen, lut_gap;
+                       ^
+ctaocrypt/src/ecc.c:1095:25: error: Shifting by a negative value is undefined behaviour [shiftNegative]
+           bitbuf |= (i << (WINSIZE - ++bitcpy));
+                        ^
+ctaocrypt/src/ecc.c:989:60: style: Variable 'bitcnt' is assigned a value that is never used. [unreadVariable]
+   int           first = 1, bitbuf = 0, bitcpy = 0, bitcnt = 0, mode = 0,
+                                                           ^
+ctaocrypt/src/ecc.c:990:25: style: Variable 'digidx' is assigned a value that is never used. [unreadVariable]
+                 digidx = 0;
+                        ^
+ctaocrypt/src/ecc.c:3477:9: style: Variable 'z' is assigned a value that is never used. [unreadVariable]
+      z = 0;
+        ^
+ctaocrypt/src/ecc.c:3646:13: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+   if ((err = mp_to_unsigned_bin(&tkb, kb[1])) != MP_OKAY) {
+            ^
+ctaocrypt/src/ecc.c:3673:23: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+             if ((err = ecc_projective_dbl_point(R, R, modulus,
+                      ^
+ctaocrypt/src/ecc.c:3682:26: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+                if ((err = ecc_projective_add_point(R, fp_cache[idx1].LUT[zA],
+                         ^
+ctaocrypt/src/ecc.c:3688:26: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+                if ((err = ecc_projective_add_point(R, fp_cache[idx2].LUT[zB],
+                         ^
+ctaocrypt/src/ecc.c:3698:26: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+                     err = GEN_MEM_ERR;
+                         ^
+ctaocrypt/src/ecc.c:3705:29: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+                   if ((err = ecc_projective_add_point(R,
+                            ^
+ctaocrypt/src/ecc.c:3714:26: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+                     err = GEN_MEM_ERR;
+                         ^
+ctaocrypt/src/hmac.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/integer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/integer.c:1800:10: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  } else if (redmode == 1) {
+         ^
+ctaocrypt/src/integer.c:1809:5: note: Found duplicate branches for 'if' and 'else'.
+  } else {
+    ^
+ctaocrypt/src/integer.c:1800:10: note: Found duplicate branches for 'if' and 'else'.
+  } else if (redmode == 1) {
+         ^
+ctaocrypt/src/integer.c:1791:6: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+     {
+     ^
+ctaocrypt/src/integer.c:1846:6: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+     if ((err = mp_mulmod (G, &res, P, &M[1])) != MP_OKAY) {
+     ^
+ctaocrypt/src/integer.c:126:7: style: The scope of the variable 'i' can be reduced. [variableScope]
+  int i;
+      ^
+ctaocrypt/src/integer.c:248:11: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     res, n;
+          ^
+ctaocrypt/src/integer.c:248:16: style: The scope of the variable 'n' can be reduced. [variableScope]
+  int     res, n;
+               ^
+ctaocrypt/src/integer.c:295:11: style: The scope of the variable 'i' can be reduced. [variableScope]
+  int     i;
+          ^
+ctaocrypt/src/integer.c:335:17: style: The scope of the variable 't' can be reduced. [variableScope]
+  unsigned char t;
+                ^
+ctaocrypt/src/integer.c:492:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x;
+          ^
+ctaocrypt/src/integer.c:679:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x, res;
+          ^
+ctaocrypt/src/integer.c:679:14: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     x, res;
+             ^
+ctaocrypt/src/integer.c:823:11: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     res;
+          ^
+ctaocrypt/src/integer.c:1354:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x, res, oldused;
+          ^
+ctaocrypt/src/integer.c:1354:14: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     x, res, oldused;
+             ^
+ctaocrypt/src/integer.c:1436:19: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     olduse, res, min, max;
+                  ^
+ctaocrypt/src/integer.c:1524:19: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     olduse, res, min, max;
+                  ^
+ctaocrypt/src/integer.c:2215:15: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     ix, res, digs;
+              ^
+ctaocrypt/src/integer.c:2495:16: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int      ix, res, olduse;
+               ^
+ctaocrypt/src/integer.c:2631:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x, res, oldused;
+          ^
+ctaocrypt/src/integer.c:2631:14: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     x, res, oldused;
+             ^
+ctaocrypt/src/integer.c:3000:22: style: The scope of the variable 'tmpt' can be reduced. [variableScope]
+  mp_digit u, tmpx, *tmpt;
+                     ^
+ctaocrypt/src/integer.c:3065:20: style: The scope of the variable 'pb' can be reduced. [variableScope]
+  int     res, pa, pb, ix, iy;
+                   ^
+ctaocrypt/src/integer.c:3068:19: style: The scope of the variable 'tmpt' can be reduced. [variableScope]
+  mp_digit tmpx, *tmpt, *tmpy;
+                  ^
+ctaocrypt/src/integer.c:3068:26: style: The scope of the variable 'tmpy' can be reduced. [variableScope]
+  mp_digit tmpx, *tmpt, *tmpy;
+                         ^
+ctaocrypt/src/integer.c:3719:14: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int     x, res;
+             ^
+ctaocrypt/src/integer.c:787:6: style: Variable 'dr' is assigned a value that is never used. [unreadVariable]
+  dr = 0;
+     ^
+ctaocrypt/src/integer.c:1728:13: style: Variable 'redux' is not assigned a value. [unassignedVariable]
+  int     (*redux)(mp_int*,mp_int*,mp_digit);
+            ^
+ctaocrypt/src/integer.c:2607:18: style: Variable 'digs' is assigned a value that is never used. [unreadVariable]
+    int     digs = a->used + b->used + 1;
+                 ^
+ctaocrypt/src/integer.c:1786:6: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+     if (((P->used * 2 + 1) < MP_WARRAY) &&
+     ^
+ctaocrypt/src/integer.c:4206:11: style: The scope of the variable 'err' can be reduced. [variableScope]
+  int     err, ix;
+          ^
+ctaocrypt/src/integer.c:784:6: style: Variable 'dr' is assigned a value that is never used. [unreadVariable]
+  dr = mp_dr_is_modulus(P);
+     ^
+ctaocrypt/src/integer.c:799:31: style: Condition 'dr!=0' is always false [knownConditionTrueFalse]
+  if (mp_isodd (P) == 1 || dr !=  0) {
+                              ^
+ctaocrypt/src/integer.c:787:8: note: Assignment 'dr=0', assigned value is 0
+  dr = 0;
+       ^
+ctaocrypt/src/integer.c:799:31: note: Condition 'dr!=0' is always false
+  if (mp_isodd (P) == 1 || dr !=  0) {
+                              ^
+ctaocrypt/src/poly1305.c:69:61: error: Unmatched '}'. Configuration: 'HAVE_POLY1305;POLY130564;_MSC_VER'. [syntaxError]
+                            out.hi += (out.lo < t) + in.hi; }
+                                                            ^
+ctaocrypt/src/poly1305.c:183:21: error: Shifting 32-bit value by 44 bits is undefined behaviour [shiftTooManyBits]
+                c = SHR(d0, 44); h0 = LO(d0) & 0xfffffffffff;
+                    ^
+ctaocrypt/src/poly1305.c:184:21: error: Shifting 32-bit value by 44 bits is undefined behaviour [shiftTooManyBits]
+  ADDLO(d1, c); c = SHR(d1, 44); h1 = LO(d1) & 0xfffffffffff;
+                    ^
+ctaocrypt/src/poly1305.c:185:21: error: Shifting 32-bit value by 42 bits is undefined behaviour [shiftTooManyBits]
+  ADDLO(d2, c); c = SHR(d2, 42); h2 = LO(d2) & 0x3ffffffffff;
+                    ^
+ctaocrypt/src/pwdbased.c:77:13: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int  i, ret = 0;
+            ^
+ctaocrypt/src/pwdbased.c:77:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int  i, ret = 0;
+                ^
+ctaocrypt/src/random.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 30 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/random.c:1047:0: information: Skipping configuration 'CUSTOM_RAND_GENERATE' since the value of 'CUSTOM_RAND_GENERATE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+         output[i] = CUSTOM_RAND_GENERATE();
+^
+ctaocrypt/src/rsa.c:794:28: error: The address of local variable 'outSz' is accessed at non-zero index. [objectIndex]
+    *u16 = (c[0] << 8) | (c[1]);
+                           ^
+ctaocrypt/src/rsa.c:815:24: note: Address of variable taken here.
+    ato16((const byte*)&outSz, &outSz);
+                       ^
+ctaocrypt/src/rsa.c:815:11: note: Calling function 'ato16', 1st argument '(const byte*)&outSz' value is lifetime=outSz
+    ato16((const byte*)&outSz, &outSz);
+          ^
+ctaocrypt/src/rsa.c:794:28: note: The address of local variable 'outSz' is accessed at non-zero index.
+    *u16 = (c[0] << 8) | (c[1]);
+                           ^
+ctaocrypt/src/sha.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/sha512.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/tfm.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 50 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/src/tfm.c:1579:15: style: Condition 'cy' is always false [knownConditionTrueFalse]
+       while (cy) {
+              ^
+ctaocrypt/src/tfm.c:1560:22: note: Assignment 'cy=0', assigned value is 0
+       fp_digit cy = 0;
+                     ^
+ctaocrypt/src/tfm.c:1579:15: note: Condition 'cy' is always false
+       while (cy) {
+              ^
+ctaocrypt/src/tfm.c:1587:8: style: Variable 'tmpm' is reassigned a value before the old one has been used. [redundantAssignment]
+  tmpm = a->dp;
+       ^
+ctaocrypt/src/tfm.c:1564:13: note: tmpm is assigned
+       tmpm = m->dp;
+            ^
+ctaocrypt/src/tfm.c:1587:8: note: tmpm is overwritten
+  tmpm = a->dp;
+       ^
+ctaocrypt/src/tfm.c:296:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x, oldused;
+          ^
+ctaocrypt/src/tfm.c:375:8: style: The scope of the variable 'x' can be reduced. [variableScope]
+   int x;
+       ^
+ctaocrypt/src/tfm.c:406:18: style: The scope of the variable 'iy' can be reduced. [variableScope]
+   int       ix, iy, iz, tx, ty, pa;
+                 ^
+ctaocrypt/src/tfm.c:406:26: style: The scope of the variable 'tx' can be reduced. [variableScope]
+   int       ix, iy, iz, tx, ty, pa;
+                         ^
+ctaocrypt/src/tfm.c:406:30: style: The scope of the variable 'ty' can be reduced. [variableScope]
+   int       ix, iy, iz, tx, ty, pa;
+                             ^
+ctaocrypt/src/tfm.c:407:27: style: The scope of the variable 'tmpx' can be reduced. [variableScope]
+   fp_digit  c0, c1, c2, *tmpx, *tmpy;
+                          ^
+ctaocrypt/src/tfm.c:407:34: style: The scope of the variable 'tmpy' can be reduced. [variableScope]
+   fp_digit  c0, c1, c2, *tmpx, *tmpy;
+                                 ^
+ctaocrypt/src/tfm.c:605:11: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int     x, oldused;
+          ^
+ctaocrypt/src/tfm.c:1006:58: style: The scope of the variable 'y' can be reduced. [variableScope]
+  int      err, bitbuf, bitcpy, bitcnt, mode, digidx, x, y, winsize;
+                                                         ^
+ctaocrypt/src/tfm.c:1814:17: style: The scope of the variable 't' can be reduced. [variableScope]
+  unsigned char t;
+                ^
+ctaocrypt/src/tfm.c:2208:14: style: The scope of the variable 'j' can be reduced. [variableScope]
+  int     s, j;
+             ^
+ctaocrypt/src/tfm.c:407:14: style: Unused variable: c0 [unusedVariable]
+   fp_digit  c0, c1, c2, *tmpx, *tmpy;
+             ^
+ctaocrypt/src/tfm.c:407:18: style: Unused variable: c1 [unusedVariable]
+   fp_digit  c0, c1, c2, *tmpx, *tmpy;
+                 ^
+ctaocrypt/src/tfm.c:407:22: style: Unused variable: c2 [unusedVariable]
+   fp_digit  c0, c1, c2, *tmpx, *tmpy;
+                     ^
+ctaocrypt/src/tfm.c:1325:13: style: Unused variable: c0 [unusedVariable]
+  fp_digit  c0, c1, c2;
+            ^
+ctaocrypt/src/tfm.c:1325:17: style: Unused variable: c1 [unusedVariable]
+  fp_digit  c0, c1, c2;
+                ^
+ctaocrypt/src/tfm.c:1325:21: style: Unused variable: c2 [unusedVariable]
+  fp_digit  c0, c1, c2;
+                    ^
+ctaocrypt/src/tfm.c:2418:11: style: The scope of the variable 'ch' can be reduced. [variableScope]
+  char    ch;
+          ^
+ctaocrypt/src/tfm.c:1328:13: style: Unused variable: tt [unusedVariable]
+  fp_word   tt;
+            ^
+ctaocrypt/src/wc_port.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/test/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 76 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+ctaocrypt/test/test.c:383:31: style: Condition '(ret=hc128_test())!=0' is always false [knownConditionTrueFalse]
+    if ( (ret = hc128_test()) != 0)
+                              ^
+ctaocrypt/test/test.c:3058:19: error: Memory leak: tmp [memleak]
+    if (ret != 0) return -39;
+                  ^
+ctaocrypt/test/test.c:4299:15: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    if ( (ret = memcmp(derived, verify2, 24)) != 0)
+              ^
+ctaocrypt/test/test.c:3443:13: error: Resource leak: pemFile [resourceLeak]
+            return -415;
+            ^
+ctaocrypt/test/test.c:3580:13: error: Resource leak: pemFile [resourceLeak]
+            return -5415;
+            ^
+examples/client/client.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 36 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+examples/echoclient/echoclient.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+examples/echoclient/echoclient.c:80:14: style: Condition 'argc>=2' is always false [knownConditionTrueFalse]
+    if (argc >= 2) {
+             ^
+examples/echoclient/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+examples/echoclient/echoclient.c:80:14: note: Condition 'argc>=2' is always false
+    if (argc >= 2) {
+             ^
+examples/echoclient/echoclient.c:84:14: style: Condition 'argc>=3' is always false [knownConditionTrueFalse]
+    if (argc >= 3) {
+             ^
+examples/echoclient/echoclient.c:69:19: note: Assignment 'argc=0', assigned value is 0
+    int argc    = 0;
+                  ^
+examples/echoclient/echoclient.c:84:14: note: Condition 'argc>=3' is always false
+    if (argc >= 3) {
+             ^
+examples/echoserver/echoserver.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 25 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+examples/echoserver/echoserver.c:150:15: style: The comparison 'doPSK == 0' is always true. [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+examples/echoserver/echoserver.c:86:20: note: 'doPSK' is assigned value '0' here.
+    int    doPSK = 0;
+                   ^
+examples/echoserver/echoserver.c:150:15: note: The comparison 'doPSK == 0' is always true.
+    if (doPSK == 0) {
+              ^
+examples/echoserver/echoserver.c:150:15: style: Condition 'doPSK==0' is always false [knownConditionTrueFalse]
+    if (doPSK == 0) {
+              ^
+examples/echoserver/echoserver.c:113:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+examples/echoserver/echoserver.c:150:15: note: Condition 'doPSK==0' is always false
+    if (doPSK == 0) {
+              ^
+examples/echoserver/echoserver.c:200:9: style: Condition 'doPSK' is always true [knownConditionTrueFalse]
+    if (doPSK) {
+        ^
+examples/echoserver/echoserver.c:113:13: note: Assignment 'doPSK=1', assigned value is 1
+    doPSK = 1;
+            ^
+examples/echoserver/echoserver.c:200:9: note: Condition 'doPSK' is always true
+    if (doPSK) {
+        ^
+examples/server/server.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+examples/server/server.c:463:50: style: The comparison 'useAnon == 0' is always true. [knownConditionTrueFalse]
+    if (doCliCertCheck && usePsk == 0 && useAnon == 0) {
+                                                 ^
+examples/server/server.c:168:22: note: 'useAnon' is assigned value '0' here.
+    int    useAnon = 0;
+                     ^
+examples/server/server.c:463:50: note: The comparison 'useAnon == 0' is always true.
+    if (doCliCertCheck && usePsk == 0 && useAnon == 0) {
+                                                 ^
+mcapi/mcapi_test.c:569:10: style: Variable 'ret1' is reassigned a value before the old one has been used. [redundantAssignment]
+    ret1 = DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:560:10: note: ret1 is assigned
+    ret1 = CRYPT_HUFFMAN_DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:569:10: note: ret1 is overwritten
+    ret1 = DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:580:10: style: Variable 'ret1' is reassigned a value before the old one has been used. [redundantAssignment]
+    ret1 = CRYPT_HUFFMAN_Compress(cBuffer, sizeof(cBuffer), text, inSz, 1);
+         ^
+mcapi/mcapi_test.c:569:10: note: ret1 is assigned
+    ret1 = DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:580:10: note: ret1 is overwritten
+    ret1 = CRYPT_HUFFMAN_Compress(cBuffer, sizeof(cBuffer), text, inSz, 1);
+         ^
+mcapi/mcapi_test.c:604:10: style: Variable 'ret1' is reassigned a value before the old one has been used. [redundantAssignment]
+    ret1 = DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:595:10: note: ret1 is assigned
+    ret1 = CRYPT_HUFFMAN_DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:604:10: note: ret1 is overwritten
+    ret1 = DeCompress(dBuffer, sizeof(dBuffer), cBuffer, outSz);
+         ^
+mcapi/mcapi_test.c:1417:33: style: Checking if unsigned expression 'usedA' is less than zero. [unsignedLessThanZero]
+    if (usedA != usedB || usedA <= 0) {
+                                ^
+mcapi/mcapi_test.c:1436:15: style: Checking if unsigned expression 'sigSz' is less than zero. [unsignedLessThanZero]
+    if (sigSz <= 0) {
+              ^
+mcapi/mcapi_test.c:100:29: warning: Redundant code: Found a statement that begins with numeric constant. [constStatement]
+    SYSTEMConfigPerformance(80000000);
+                            ^
+mplabx/benchmark_main.c:75:29: warning: Redundant code: Found a statement that begins with numeric constant. [constStatement]
+    SYSTEMConfigPerformance(80000000);
+                            ^
+mplabx/test_main.c:58:9: style: Unused variable: i [unusedVariable]
+    int i ;
+        ^
+mplabx/test_main.c:61:29: warning: Redundant code: Found a statement that begins with numeric constant. [constStatement]
+    SYSTEMConfigPerformance(80000000);
+                            ^
+mqx/cyassl_client/Sources/main.c:150:9: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("Getting time from NTP server [ attempt %d of %d ]...\n",
+        ^
+mqx/cyassl_client/Sources/main.c:150:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("Getting time from NTP server [ attempt %d of %d ]...\n",
+        ^
+mqx/cyassl_client/Sources/main.h:32:33: warning: Either the condition 'msg' is redundant or there is possible null pointer dereference: msg. [nullPointerRedundantCheck]
+    printf("yassl error: %s\n", msg);
+                                ^
+mqx/cyassl_client/Sources/main.h:33:9: note: Assuming that condition 'msg' is not redundant
+    if (msg)
+        ^
+mqx/cyassl_client/Sources/main.h:32:33: note: Null pointer dereference
+    printf("yassl error: %s\n", msg);
+                                ^
+mqx/cyassl_client/Sources/main.c:139:14: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    uint32_t ret = 0, i = 0;
+             ^
+mqx/cyassl_client/Sources/main.c:139:18: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    uint32_t ret = 0, i = 0;
+                 ^
+mqx/util_lib/Sources/util.c:56:0: information: Skipping configuration 'BSPCFG_ENABLE_IO_SUBSYSTEM;BSP_DEFAULT_IO_CHANNEL_DEFINED;BSPCFG_ENABLE_ESDHC;BSP_SDCARD_ESDHC_CHANNEL;BSPCFG_ENABLE_SDHC;BSP_SDCARD_SDHC_CHANNEL;BSP_SDCARD_SDHC_CHANNEL' since the value of 'BSP_SDCARD_ESDHC_CHANNEL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ *com_handle = fopen(SDCARD_COM_CHANNEL, NULL);
+^
+mqx/wolfcrypt_benchmark/Sources/main.c:53:12: style: struct member 'func_args::argc' is never used. [unusedStructMember]
+    int    argc;
+           ^
+mqx/wolfcrypt_benchmark/Sources/main.c:54:12: style: struct member 'func_args::argv' is never used. [unusedStructMember]
+    char** argv;
+           ^
+mqx/wolfcrypt_benchmark/Sources/main.c:55:12: style: struct member 'func_args::return_code' is never used. [unusedStructMember]
+    int    return_code;
+           ^
+mqx/wolfcrypt_test/Sources/main.c:53:12: style: struct member 'func_args::argc' is never used. [unusedStructMember]
+    int    argc;
+           ^
+mqx/wolfcrypt_test/Sources/main.c:54:12: style: struct member 'func_args::argv' is never used. [unusedStructMember]
+    char** argv;
+           ^
+mqx/wolfcrypt_test/Sources/main.c:55:12: style: struct member 'func_args::return_code' is never used. [unusedStructMember]
+    int    return_code;
+           ^
+src/internal.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 243 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/internal.c:10930:17: style: The if condition is the same as the previous if condition [duplicateCondition]
+        if (ret == 0)
+                ^
+src/internal.c:10929:17: note: First condition
+        if (ret == 0) initRsaKey = 1;
+                ^
+src/internal.c:10930:17: note: Second condition
+        if (ret == 0)
+                ^
+src/internal.c:7221:9: style: Condition 'atomicUser' is always false [knownConditionTrueFalse]
+    if (atomicUser) {   /* User Record Layer Callback handling */
+        ^
+src/internal.c:7149:22: note: Assignment 'atomicUser=0', assigned value is 0
+    int atomicUser = 0;
+                     ^
+src/internal.c:7193:12: note: Assuming condition is false
+    if (sz > (word32)outSz) {
+           ^
+src/internal.c:7221:9: note: Condition 'atomicUser' is always false
+    if (atomicUser) {   /* User Record Layer Callback handling */
+        ^
+src/internal.c:11113:21: style: Condition 'doUserRsa' is always false [knownConditionTrueFalse]
+                if (doUserRsa) {
+                    ^
+src/internal.c:11068:34: note: Assignment 'doUserRsa=0', assigned value is 0
+                byte doUserRsa = 0;
+                                 ^
+src/internal.c:11113:21: note: Condition 'doUserRsa' is always false
+                if (doUserRsa) {
+                    ^
+src/internal.c:12384:25: style: Condition 'doUserRsa' is always false [knownConditionTrueFalse]
+                    if (doUserRsa) {
+                        ^
+src/internal.c:12346:40: note: Assignment 'doUserRsa=0', assigned value is 0
+                    byte   doUserRsa = 0;
+                                       ^
+src/internal.c:12384:25: note: Condition 'doUserRsa' is always false
+                    if (doUserRsa) {
+                        ^
+src/internal.c:13112:17: style: Condition 'doUserRsa' is always false [knownConditionTrueFalse]
+            if (doUserRsa) {
+                ^
+src/internal.c:13103:31: note: Assignment 'doUserRsa=0', assigned value is 0
+            byte  doUserRsa = 0;
+                              ^
+src/internal.c:13112:17: note: Condition 'doUserRsa' is always false
+            if (doUserRsa) {
+                ^
+src/internal.c:3831:10: style: The scope of the variable 'p' can be reduced. [variableScope]
+    char p, s;
+         ^
+src/internal.c:6975:21: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    int    ret      = 0;
+                    ^
+src/internal.c:13024:21: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+            int ret = -1;
+                    ^
+src/internal.c:2247:9: style: The scope of the variable 'ret' can be reduced. [variableScope]
+    int ret;
+        ^
+src/internal.c:712:16: style: Variable 'tls' is assigned a value that is never used. [unreadVariable]
+        tls    = 1;
+               ^
+src/internal.c:713:16: style: Variable 'tls1_2' is assigned a value that is never used. [unreadVariable]
+        tls1_2 = pv.minor <= DTLSv1_2_MINOR;
+               ^
+src/io.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/io.c:315:43: style: Same expression on both sides of '-'. [duplicateExpression]
+    sent = (int)SEND_FUNCTION(sd, &buf[sz - len], len, ssl->wflags);
+                                          ^
+src/io.c:312:15: note: 'len' is assigned value 'sz' here.
+    int len = sz;
+              ^
+src/io.c:315:43: note: Same expression on both sides of '-'.
+    sent = (int)SEND_FUNCTION(sd, &buf[sz - len], len, ssl->wflags);
+                                          ^
+src/io.c:313:9: style: The scope of the variable 'err' can be reduced. [variableScope]
+    int err;
+        ^
+src/io.c:452:45: style: Same expression on both sides of '-'. [duplicateExpression]
+    sent = (int)SENDTO_FUNCTION(sd, &buf[sz - len], len, ssl->wflags,
+                                            ^
+src/io.c:447:15: note: 'len' is assigned value 'sz' here.
+    int len = sz;
+              ^
+src/io.c:452:45: note: Same expression on both sides of '-'.
+    sent = (int)SENDTO_FUNCTION(sd, &buf[sz - len], len, ssl->wflags,
+                                            ^
+src/io.c:448:9: style: The scope of the variable 'err' can be reduced. [variableScope]
+    int err;
+        ^
+src/io.c:801:38: style: Redundant condition: If 'EXPR == ' '', the comparison 'EXPR != '\0'' is always true. [redundantCondition]
+                while (*start == ' ' && *start != '\0') start++;
+                                     ^
+src/io.c:816:38: style: Redundant condition: If 'EXPR == ' '', the comparison 'EXPR != '\0'' is always true. [redundantCondition]
+                while (*start == ' ' && *start != '\0') start++;
+                                     ^
+src/keys.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 125 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/keys.c:2073:20: style: Variable 'aesRet' is assigned a value that is never used. [unreadVariable]
+        int aesRet = 0;
+                   ^
+src/keys.c:2014:20: style: Variable 'desRet' is assigned a value that is never used. [unreadVariable]
+        int desRet = 0;
+                   ^
+src/sniffer.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/sniffer.c:717:55: error: The address of local variable 'addr' is accessed at non-zero index. [objectIndex]
+    SNPRINTF(str, TRACE_MSG_SZ, "%d.%d.%d.%d", p[0], p[1], p[2], p[3]);
+                                                      ^
+src/sniffer.c:715:22: note: Address of variable taken here.
+    byte* p = (byte*)&addr;
+                     ^
+src/sniffer.c:717:55: note: The address of local variable 'addr' is accessed at non-zero index.
+    SNPRINTF(str, TRACE_MSG_SZ, "%d.%d.%d.%d", p[0], p[1], p[2], p[3]);
+                                                      ^
+src/sniffer.c:422:23: style: The scope of the variable 'del' can be reduced. [variableScope]
+        PacketBuffer* del;
+                      ^
+src/sniffer.c:454:21: style: The scope of the variable 'removeServer' can be reduced. [variableScope]
+    SnifferServer*  removeServer;
+                    ^
+src/sniffer.c:1000:9: style: The scope of the variable 'saveBufSz' can be reduced. [variableScope]
+    int saveBufSz;
+        ^
+src/ssl.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 123 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/ssl.c:2525:25: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+                    if (!eccKey)
+                        ^
+src/ssl.c:2501:13: note: outer condition: !eccKey
+        if (!eccKey) {
+            ^
+src/ssl.c:2525:25: note: identical inner condition: !eccKey
+                    if (!eccKey)
+                        ^
+src/ssl.c:2988:27: error: Resource leak: file [resourceLeak]
+    if (file == XBADFILE) return SSL_BAD_FILE;
+                          ^
+src/ssl.c:3155:27: error: Resource leak: file [resourceLeak]
+    if (file == XBADFILE) return SSL_BAD_FILE;
+                          ^
+src/ssl.c:3693:27: error: Resource leak: file [resourceLeak]
+    if (file == XBADFILE) return SSL_BAD_FILE;
+                          ^
+src/ssl.c:233:10: style: The scope of the variable 'step' can be reduced. [variableScope]
+    int  step     = 0;
+         ^
+src/ssl.c:1024:14: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+        char tmp[CYASSL_MAX_ERROR_SZ];
+             ^
+src/ssl.c:233:19: style: Variable 'step' is assigned a value that is never used. [unreadVariable]
+    int  step     = 0;
+                  ^
+src/ssl.c:1756:24: style: Variable 'signer' is assigned a value that is never used. [unreadVariable]
+    Signer*     signer = 0;
+                       ^
+src/ssl.c:11567:25: style: Checking if unsigned expression '*sigLen' is less than zero. [unsignedLessThanZero]
+            if (*sigLen <= 0)
+                        ^
+src/ssl.c:7395:17: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+        int ret = 0;
+                ^
+src/ssl.c:10983:27: style: Variable 'keySz' is assigned a value that is never used. [unreadVariable]
+    word32         keySz  = 0;
+                          ^
+src/ssl.c:6107:0: information: Skipping configuration 'CYASSL_CALLBACKS;SA_INTERRUPT' since the value of 'SA_INTERRUPT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            act.sa_flags |= SA_INTERRUPT;
+^
+src/ssl.c:3495:20: style: Variable 'sz' is assigned a value that is never used. [unreadVariable]
+    long   sz      = 0;
+                   ^
+src/tls.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 21 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/tls.c:1029:34: warning: Either the condition 'extensions==NULL' is redundant or there is possible null pointer dereference: extensions. [nullPointerRedundantCheck]
+    TLSX* extension = TLSX_Find(*extensions, SERVER_NAME_INDICATION);
+                                 ^
+src/tls.c:1033:20: note: Assuming that condition 'extensions==NULL' is not redundant
+    if (extensions == NULL || data == NULL)
+                   ^
+src/tls.c:1029:34: note: Null pointer dereference
+    TLSX* extension = TLSX_Find(*extensions, SERVER_NAME_INDICATION);
+                                 ^
+sslSniffer/sslSnifferTest/snifftest.c:117:60: error: The address of local variable 'addr' is accessed at non-zero index. [objectIndex]
+    SNPRINTF(output, sizeof(output), "%d.%d.%d.%d", p[0], p[1], p[2], p[3]);
+                                                           ^
+sslSniffer/sslSnifferTest/snifftest.c:115:22: note: Address of variable taken here.
+    byte *p = (byte*)&addr;
+                     ^
+sslSniffer/sslSnifferTest/snifftest.c:117:60: note: The address of local variable 'addr' is accessed at non-zero index.
+    SNPRINTF(output, sizeof(output), "%d.%d.%d.%d", p[0], p[1], p[2], p[3]);
+                                                           ^
+sslSniffer/sslSnifferTest/snifftest.c:99:29: warning: Either the condition 'msg' is redundant or there is possible null pointer dereference: msg. [nullPointerRedundantCheck]
+    fprintf(stderr, "%s\n", msg);
+                            ^
+sslSniffer/sslSnifferTest/snifftest.c:100:9: note: Assuming that condition 'msg' is not redundant
+    if (msg)
+        ^
+sslSniffer/sslSnifferTest/snifftest.c:99:29: note: Null pointer dereference
+    fprintf(stderr, "%s\n", msg);
+                            ^
+swig/cyassl_adds.c:144:0: information: Skipping configuration 'SO_NOSIGPIPE' since the value of 'SO_NOSIGPIPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        setsockopt(*sockfd, SOL_SOCKET, SO_NOSIGPIPE, &on, len);
+^
+tests/api.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 25 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+tests/hash.c:136:19: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+        if ( (ret = hmac_sha256_test()) )
+                  ^
+tests/hash.c:143:19: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+        if ( (ret = hmac_sha384_test()) )
+                  ^
+testsuite/testsuite.c:263:22: style: Variable 'cliArgs.argc' is reassigned a value before the old one has been used. [redundantAssignment]
+        cliArgs.argc = NUMARGS;
+                     ^
+testsuite/testsuite.c:235:18: note: cliArgs.argc is assigned
+    cliArgs.argc = 1;
+                 ^
+testsuite/testsuite.c:263:22: note: cliArgs.argc is overwritten
+        cliArgs.argc = NUMARGS;
+                     ^
+testsuite/testsuite.c:359:40: style:inconclusive: Function 'file_test' argument 2 names different: declaration 'hash' definition 'check'. [funcArgNamesDifferent]
+void file_test(const char* file, byte* check)
+                                       ^
+testsuite/testsuite.c:42:40: note: Function 'file_test' argument 2 names different: declaration 'hash' definition 'check'.
+void file_test(const char* file, byte* hash);
+                                       ^
+testsuite/testsuite.c:359:40: note: Function 'file_test' argument 2 names different: declaration 'hash' definition 'check'.
+void file_test(const char* file, byte* check)
+                                       ^
+testsuite/testsuite.c:128:14: style: Unused variable: argc0 [unusedVariable]
+        char argc0[32];
+             ^
+testsuite/testsuite.c:129:14: style: Unused variable: argc1 [unusedVariable]
+        char argc1[32];
+             ^
+testsuite/testsuite.c:130:14: style: Unused variable: argc2 [unusedVariable]
+        char argc2[32];
+             ^
+testsuite/testsuite.c:203:10: style: Unused variable: argc0s [unusedVariable]
+    char argc0s[32];
+         ^
+testsuite/testsuite.c:204:10: style: Unused variable: argc1s [unusedVariable]
+    char argc1s[32];
+         ^
+testsuite/testsuite.c:205:10: style: Unused variable: argc2s [unusedVariable]
+    char argc2s[32];
+         ^
+testsuite/testsuite.c:206:10: style: Unused variable: argc3s [unusedVariable]
+    char argc3s[32];
+         ^
+testsuite/testsuite.c:207:10: style: Unused variable: argc4s [unusedVariable]
+    char argc4s[32];
+         ^
+testsuite/testsuite.c:208:10: style: Unused variable: argc5s [unusedVariable]
+    char argc5s[32];
+         ^
+testsuite/testsuite.c:209:10: style: Unused variable: argc6s [unusedVariable]
+    char argc6s[32];
+         ^
+testsuite/testsuite.c:210:10: style: Unused variable: argc7s [unusedVariable]
+    char argc7s[32];
+         ^
+testsuite/testsuite.c:211:10: style: Unused variable: argc8s [unusedVariable]
+    char argc8s[32];
+         ^
+testsuite/testsuite.c:215:10: style: Unused variable: argc0c [unusedVariable]
+    char argc0c[32];
+         ^
+testsuite/testsuite.c:216:10: style: Unused variable: argc1c [unusedVariable]
+    char argc1c[32];
+         ^
+testsuite/testsuite.c:217:10: style: Unused variable: argc2c [unusedVariable]
+    char argc2c[32];
+         ^
+tirtos/packages/ti/net/cyassl/tests/ctaocrypt/test/main.c:15:12: style: struct member 'func_args::return_code' is never used. [unusedStructMember]
+    int    return_code;
+           ^
+ctaocrypt/src/coding.c:321:0: style: The function 'Base64_EncodeEsc' is never used. [unusedFunction]
+
+^
+src/crl.c:241:0: style: The function 'BufferLoadCRL' is never used. [unusedFunction]
+
+^
+mcapi/crypto.c:380:0: style: The function 'CRYPT_AES_IvSet' is never used. [unusedFunction]
+
+^
+mcapi/crypto.c:600:0: style: The function 'CRYPT_ECC_PrivateImport' is never used. [unusedFunction]
+
+^
+mcapi/crypto.c:694:0: style: The function 'CRYPT_ERROR_StringGet' is never used. [unusedFunction]
+
+^
+mcapi/crypto.c:479:0: style: The function 'CRYPT_RSA_PublicKeyDecode' is never used. [unusedFunction]
+
+^
+mcapi/crypto.c:334:0: style: The function 'CRYPT_TDES_IvSet' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/camellia.c:1582:0: style: The function 'CamelliaDecryptDirect' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/camellia.c:1576:0: style: The function 'CamelliaEncryptDirect' is never used. [unusedFunction]
+
+^
+src/crl.c:137:0: style: The function 'CheckCertCRL' is never used. [unusedFunction]
+
+^
+src/ocsp.c:105:0: style: The function 'CheckCertOCSP' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/tfm.c:54:0: style: The function 'CheckRunTimeFastMath' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:51:0: style: The function 'CheckRunTimeSettings' is never used. [unusedFunction]
+
+^
+src/ssl.c:5221:0: style: The function 'CyaDTLSv1_2_server_method' is never used. [unusedFunction]
+
+^
+src/ssl.c:11820:0: style: The function 'CyaSSL_3des_iv' is never used. [unusedFunction]
+
+^
+src/ssl.c:9818:0: style: The function 'CyaSSL_ASN1_INTEGER_cmp' is never used. [unusedFunction]
+
+^
+src/ssl.c:9827:0: style: The function 'CyaSSL_ASN1_INTEGER_get' is never used. [unusedFunction]
+
+^
+src/ssl.c:9809:0: style: The function 'CyaSSL_ASN1_TIME_print' is never used. [unusedFunction]
+
+^
+src/ssl.c:10033:0: style: The function 'CyaSSL_ASN1_UTCTIME_print' is never used. [unusedFunction]
+
+^
+src/ssl.c:6710:0: style: The function 'CyaSSL_BIO_eof' is never used. [unusedFunction]
+
+^
+src/ssl.c:9407:0: style: The function 'CyaSSL_BIO_f_base64' is never used. [unusedFunction]
+
+^
+src/ssl.c:6658:0: style: The function 'CyaSSL_BIO_f_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:6678:0: style: The function 'CyaSSL_BIO_f_ssl' is never used. [unusedFunction]
+
+^
+src/ssl.c:6892:0: style: The function 'CyaSSL_BIO_flush' is never used. [unusedFunction]
+
+^
+src/ssl.c:6813:0: style: The function 'CyaSSL_BIO_free_all' is never used. [unusedFunction]
+
+^
+src/ssl.c:6751:0: style: The function 'CyaSSL_BIO_get_mem_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:6762:0: style: The function 'CyaSSL_BIO_new_mem_buf' is never used. [unusedFunction]
+
+^
+src/ssl.c:6689:0: style: The function 'CyaSSL_BIO_new_socket' is never used. [unusedFunction]
+
+^
+src/ssl.c:9388:0: style: The function 'CyaSSL_BIO_pending' is never used. [unusedFunction]
+
+^
+src/ssl.c:9381:0: style: The function 'CyaSSL_BIO_pop' is never used. [unusedFunction]
+
+^
+src/ssl.c:10025:0: style: The function 'CyaSSL_BIO_printf' is never used. [unusedFunction]
+
+^
+src/ssl.c:6882:0: style: The function 'CyaSSL_BIO_push' is never used. [unusedFunction]
+
+^
+src/ssl.c:6825:0: style: The function 'CyaSSL_BIO_read' is never used. [unusedFunction]
+
+^
+src/ssl.c:9413:0: style: The function 'CyaSSL_BIO_set_flags' is never used. [unusedFunction]
+
+^
+src/ssl.c:6720:0: style: The function 'CyaSSL_BIO_set_ssl' is never used. [unusedFunction]
+
+^
+src/ssl.c:6669:0: style: The function 'CyaSSL_BIO_set_write_buffer_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:6853:0: style: The function 'CyaSSL_BIO_write' is never used. [unusedFunction]
+
+^
+src/ssl.c:10325:0: style: The function 'CyaSSL_BN_CTX_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:10318:0: style: The function 'CyaSSL_BN_CTX_init' is never used. [unusedFunction]
+
+^
+src/ssl.c:10309:0: style: The function 'CyaSSL_BN_CTX_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:10747:0: style: The function 'CyaSSL_BN_bn2dec' is never used. [unusedFunction]
+
+^
+src/ssl.c:10390:0: style: The function 'CyaSSL_BN_clear_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:10509:0: style: The function 'CyaSSL_BN_cmp' is never used. [unusedFunction]
+
+^
+src/ssl.c:10714:0: style: The function 'CyaSSL_BN_copy' is never used. [unusedFunction]
+
+^
+src/ssl.c:10736:0: style: The function 'CyaSSL_BN_dec2bn' is never used. [unusedFunction]
+
+^
+src/ssl.c:10687:0: style: The function 'CyaSSL_BN_dup' is never used. [unusedFunction]
+
+^
+src/ssl.c:10643:0: style: The function 'CyaSSL_BN_hex2bn' is never used. [unusedFunction]
+
+^
+src/ssl.c:10631:0: style: The function 'CyaSSL_BN_is_bit_set' is never used. [unusedFunction]
+
+^
+src/ssl.c:10498:0: style: The function 'CyaSSL_BN_is_odd' is never used. [unusedFunction]
+
+^
+src/ssl.c:10484:0: style: The function 'CyaSSL_BN_is_one' is never used. [unusedFunction]
+
+^
+src/ssl.c:10473:0: style: The function 'CyaSSL_BN_is_zero' is never used. [unusedFunction]
+
+^
+src/ssl.c:10417:0: style: The function 'CyaSSL_BN_mod' is never used. [unusedFunction]
+
+^
+src/ssl.c:10462:0: style: The function 'CyaSSL_BN_num_bits' is never used. [unusedFunction]
+
+^
+src/ssl.c:10571:0: style: The function 'CyaSSL_BN_rand' is never used. [unusedFunction]
+
+^
+src/ssl.c:10725:0: style: The function 'CyaSSL_BN_set_word' is never used. [unusedFunction]
+
+^
+src/ssl.c:10399:0: style: The function 'CyaSSL_BN_sub' is never used. [unusedFunction]
+
+^
+src/ssl.c:10435:0: style: The function 'CyaSSL_BN_value_one' is never used. [unusedFunction]
+
+^
+src/ssl.c:9296:0: style: The function 'CyaSSL_CIPHER_description' is never used. [unusedFunction]
+
+^
+src/ssl.c:9473:0: style: The function 'CyaSSL_COMP_add_compression_method' is never used. [unusedFunction]
+
+^
+src/ssl.c:9467:0: style: The function 'CyaSSL_COMP_rle' is never used. [unusedFunction]
+
+^
+src/ssl.c:9461:0: style: The function 'CyaSSL_COMP_zlib' is never used. [unusedFunction]
+
+^
+src/ssl.c:3935:0: style: The function 'CyaSSL_CTX_SetCACb' is never used. [unusedFunction]
+
+^
+src/ssl.c:1092:0: style: The function 'CyaSSL_CTX_SetDecryptVerifyCb' is never used. [unusedFunction]
+
+^
+src/io.c:1009:0: style: The function 'CyaSSL_CTX_SetGenCookie' is never used. [unusedFunction]
+
+^
+src/ssl.c:1069:0: style: The function 'CyaSSL_CTX_SetMacEncryptCb' is never used. [unusedFunction]
+
+^
+src/ssl.c:3736:0: style: The function 'CyaSSL_CTX_SetTmpDH_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:6424:0: style: The function 'CyaSSL_CTX_UnloadCAs' is never used. [unusedFunction]
+
+^
+src/ssl.c:3292:0: style: The function 'CyaSSL_CTX_check_private_key' is never used. [unusedFunction]
+
+^
+src/ssl.c:3463:0: style: The function 'CyaSSL_CTX_der_load_verify_locations' is never used. [unusedFunction]
+
+^
+src/ssl.c:10057:0: style: The function 'CyaSSL_CTX_get_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:10131:0: style: The function 'CyaSSL_CTX_get_ex_new_index' is never used. [unusedFunction]
+
+^
+src/ssl.c:8063:0: style: The function 'CyaSSL_CTX_get_mode' is never used. [unusedFunction]
+
+^
+src/ssl.c:6326:0: style: The function 'CyaSSL_CTX_load_verify_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:9918:0: style: The function 'CyaSSL_CTX_sess_accept' is never used. [unusedFunction]
+
+^
+src/ssl.c:9932:0: style: The function 'CyaSSL_CTX_sess_accept_good' is never used. [unusedFunction]
+
+^
+src/ssl.c:9946:0: style: The function 'CyaSSL_CTX_sess_accept_renegotiate' is never used. [unusedFunction]
+
+^
+src/ssl.c:9974:0: style: The function 'CyaSSL_CTX_sess_cache_full' is never used. [unusedFunction]
+
+^
+src/ssl.c:9967:0: style: The function 'CyaSSL_CTX_sess_cb_hits' is never used. [unusedFunction]
+
+^
+src/ssl.c:9925:0: style: The function 'CyaSSL_CTX_sess_connect' is never used. [unusedFunction]
+
+^
+src/ssl.c:9939:0: style: The function 'CyaSSL_CTX_sess_connect_good' is never used. [unusedFunction]
+
+^
+src/ssl.c:9953:0: style: The function 'CyaSSL_CTX_sess_connect_renegotiate' is never used. [unusedFunction]
+
+^
+src/ssl.c:8091:0: style: The function 'CyaSSL_CTX_sess_get_cache_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:9960:0: style: The function 'CyaSSL_CTX_sess_hits' is never used. [unusedFunction]
+
+^
+src/ssl.c:9981:0: style: The function 'CyaSSL_CTX_sess_misses' is never used. [unusedFunction]
+
+^
+src/ssl.c:9995:0: style: The function 'CyaSSL_CTX_sess_number' is never used. [unusedFunction]
+
+^
+src/ssl.c:6449:0: style: The function 'CyaSSL_CTX_sess_set_cache_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:10074:0: style: The function 'CyaSSL_CTX_sess_set_get_cb' is never used. [unusedFunction]
+
+^
+src/ssl.c:10082:0: style: The function 'CyaSSL_CTX_sess_set_new_cb' is never used. [unusedFunction]
+
+^
+src/ssl.c:10090:0: style: The function 'CyaSSL_CTX_sess_set_remove_cb' is never used. [unusedFunction]
+
+^
+src/ssl.c:9988:0: style: The function 'CyaSSL_CTX_sess_timeouts' is never used. [unusedFunction]
+
+^
+src/ssl.c:6485:0: style: The function 'CyaSSL_CTX_set_client_CA_list' is never used. [unusedFunction]
+
+^
+src/ssl.c:8071:0: style: The function 'CyaSSL_CTX_set_default_read_ahead' is never used. [unusedFunction]
+
+^
+src/ssl.c:6500:0: style: The function 'CyaSSL_CTX_set_default_verify_paths' is never used. [unusedFunction]
+
+^
+src/ssl.c:10065:0: style: The function 'CyaSSL_CTX_set_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:9867:0: style: The function 'CyaSSL_CTX_set_info_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:8051:0: style: The function 'CyaSSL_CTX_set_mode' is never used. [unusedFunction]
+
+^
+src/ssl.c:6590:0: style: The function 'CyaSSL_CTX_set_options' is never used. [unusedFunction]
+
+^
+src/ssl.c:6458:0: style: The function 'CyaSSL_CTX_set_quiet_shutdown' is never used. [unusedFunction]
+
+^
+src/ssl.c:4383:0: style: The function 'CyaSSL_CTX_set_session_cache_mode' is never used. [unusedFunction]
+
+^
+src/ssl.c:8079:0: style: The function 'CyaSSL_CTX_set_session_id_context' is never used. [unusedFunction]
+
+^
+src/ssl.c:5546:0: style: The function 'CyaSSL_CTX_set_timeout' is never used. [unusedFunction]
+
+^
+src/ssl.c:6574:0: style: The function 'CyaSSL_CTX_set_tmp_rsa_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:6345:0: style: The function 'CyaSSL_CTX_use_PrivateKey_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:3844:0: style: The function 'CyaSSL_CTX_use_RSAPrivateKey_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:6337:0: style: The function 'CyaSSL_CTX_use_certificate_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:6353:0: style: The function 'CyaSSL_CTX_use_certificate_chain_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:3280:0: style: The function 'CyaSSL_CertManagerDisableCRL' is never used. [unusedFunction]
+
+^
+src/ssl.c:2773:0: style: The function 'CyaSSL_CertManagerDisableOCSP' is never used. [unusedFunction]
+
+^
+src/ssl.c:3245:0: style: The function 'CyaSSL_CertManagerEnableCRL' is never used. [unusedFunction]
+
+^
+src/ssl.c:2730:0: style: The function 'CyaSSL_CertManagerEnableOCSP' is never used. [unusedFunction]
+
+^
+src/ssl.c:3210:0: style: The function 'CyaSSL_CertManagerLoadCA' is never used. [unusedFunction]
+
+^
+src/ssl.c:3139:0: style: The function 'CyaSSL_CertManagerVerify' is never used. [unusedFunction]
+
+^
+src/ssl.c:1310:0: style: The function 'CyaSSL_CertPemToDer' is never used. [unusedFunction]
+
+^
+src/ssl.c:7985:0: style: The function 'CyaSSL_DES_cbc_encrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:10016:0: style: The function 'CyaSSL_DES_ecb_encrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:7976:0: style: The function 'CyaSSL_DES_key_sched' is never used. [unusedFunction]
+
+^
+src/ssl.c:8005:0: style: The function 'CyaSSL_DES_ncbc_encrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:10002:0: style: The function 'CyaSSL_DES_set_key_unchecked' is never used. [unusedFunction]
+
+^
+src/ssl.c:10010:0: style: The function 'CyaSSL_DES_set_odd_parity' is never used. [unusedFunction]
+
+^
+src/ssl.c:10979:0: style: The function 'CyaSSL_DH_compute_key' is never used. [unusedFunction]
+
+^
+src/ssl.c:10802:0: style: The function 'CyaSSL_DH_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:10891:0: style: The function 'CyaSSL_DH_generate_key' is never used. [unusedFunction]
+
+^
+src/ssl.c:10773:0: style: The function 'CyaSSL_DH_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:10879:0: style: The function 'CyaSSL_DH_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:12041:0: style: The function 'CyaSSL_DSA_LoadDer' is never used. [unusedFunction]
+
+^
+src/ssl.c:11450:0: style: The function 'CyaSSL_DSA_do_sign' is never used. [unusedFunction]
+
+^
+src/ssl.c:11084:0: style: The function 'CyaSSL_DSA_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:11106:0: style: The function 'CyaSSL_DSA_generate_key' is never used. [unusedFunction]
+
+^
+src/ssl.c:11116:0: style: The function 'CyaSSL_DSA_generate_parameters_ex' is never used. [unusedFunction]
+
+^
+src/ssl.c:11055:0: style: The function 'CyaSSL_DSA_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:9880:0: style: The function 'CyaSSL_ERR_GET_REASON' is never used. [unusedFunction]
+
+^
+src/ssl.c:7951:0: style: The function 'CyaSSL_ERR_clear_error' is never used. [unusedFunction]
+
+^
+src/ssl.c:1018:0: style: The function 'CyaSSL_ERR_error_string_n' is never used. [unusedFunction]
+
+^
+src/ssl.c:8026:0: style: The function 'CyaSSL_ERR_free_strings' is never used. [unusedFunction]
+
+^
+src/ssl.c:6935:0: style: The function 'CyaSSL_ERR_get_error' is never used. [unusedFunction]
+
+^
+src/ssl.c:8098:0: style: The function 'CyaSSL_ERR_get_error_line_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:9874:0: style: The function 'CyaSSL_ERR_peek_error' is never used. [unusedFunction]
+
+^
+src/ssl.c:1474:0: style: The function 'CyaSSL_ERR_print_errors_fp' is never used. [unusedFunction]
+
+^
+src/ssl.c:8032:0: style: The function 'CyaSSL_ERR_remove_state' is never used. [unusedFunction]
+
+^
+src/ssl.c:6941:0: style: The function 'CyaSSL_EVP_BytesToKey' is never used. [unusedFunction]
+
+^
+src/ssl.c:7378:0: style: The function 'CyaSSL_EVP_CIPHER_CTX_cleanup' is never used. [unusedFunction]
+
+^
+src/ssl.c:7366:0: style: The function 'CyaSSL_EVP_CIPHER_CTX_init' is never used. [unusedFunction]
+
+^
+src/ssl.c:11900:0: style: The function 'CyaSSL_EVP_CIPHER_CTX_iv_length' is never used. [unusedFunction]
+
+^
+src/ssl.c:7585:0: style: The function 'CyaSSL_EVP_CIPHER_CTX_key_length' is never used. [unusedFunction]
+
+^
+src/ssl.c:7596:0: style: The function 'CyaSSL_EVP_CIPHER_CTX_set_key_length' is never used. [unusedFunction]
+
+^
+src/ssl.c:7610:0: style: The function 'CyaSSL_EVP_Cipher' is never used. [unusedFunction]
+
+^
+src/ssl.c:7391:0: style: The function 'CyaSSL_EVP_CipherInit' is never used. [unusedFunction]
+
+^
+src/ssl.c:7862:0: style: The function 'CyaSSL_EVP_DigestFinal' is never used. [unusedFunction]
+
+^
+src/ssl.c:7898:0: style: The function 'CyaSSL_EVP_DigestFinal_ex' is never used. [unusedFunction]
+
+^
+src/ssl.c:7797:0: style: The function 'CyaSSL_EVP_DigestInit' is never used. [unusedFunction]
+
+^
+src/ssl.c:7833:0: style: The function 'CyaSSL_EVP_DigestUpdate' is never used. [unusedFunction]
+
+^
+src/ssl.c:7357:0: style: The function 'CyaSSL_EVP_MD_CTX_cleanup' is never used. [unusedFunction]
+
+^
+src/ssl.c:7269:0: style: The function 'CyaSSL_EVP_MD_CTX_init' is never used. [unusedFunction]
+
+^
+src/ssl.c:11866:0: style: The function 'CyaSSL_EVP_MD_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:9760:0: style: The function 'CyaSSL_EVP_PKEY_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:11771:0: style: The function 'CyaSSL_EVP_PKEY_get1_DSA' is never used. [unusedFunction]
+
+^
+src/ssl.c:11762:0: style: The function 'CyaSSL_EVP_PKEY_get1_RSA' is never used. [unusedFunction]
+
+^
+src/ssl.c:11780:0: style: The function 'CyaSSL_EVP_X_STATE' is never used. [unusedFunction]
+
+^
+src/ssl.c:11800:0: style: The function 'CyaSSL_EVP_X_STATE_LEN' is never used. [unusedFunction]
+
+^
+src/ssl.c:7277:0: style: The function 'CyaSSL_EVP_aes_128_cbc' is never used. [unusedFunction]
+
+^
+src/ssl.c:7301:0: style: The function 'CyaSSL_EVP_aes_128_ctr' is never used. [unusedFunction]
+
+^
+src/ssl.c:7285:0: style: The function 'CyaSSL_EVP_aes_192_cbc' is never used. [unusedFunction]
+
+^
+src/ssl.c:7309:0: style: The function 'CyaSSL_EVP_aes_192_ctr' is never used. [unusedFunction]
+
+^
+src/ssl.c:7293:0: style: The function 'CyaSSL_EVP_aes_256_cbc' is never used. [unusedFunction]
+
+^
+src/ssl.c:7317:0: style: The function 'CyaSSL_EVP_aes_256_ctr' is never used. [unusedFunction]
+
+^
+src/ssl.c:8039:0: style: The function 'CyaSSL_EVP_cleanup' is never used. [unusedFunction]
+
+^
+src/ssl.c:7325:0: style: The function 'CyaSSL_EVP_des_cbc' is never used. [unusedFunction]
+
+^
+src/ssl.c:7333:0: style: The function 'CyaSSL_EVP_des_ede3_cbc' is never used. [unusedFunction]
+
+^
+src/ssl.c:7349:0: style: The function 'CyaSSL_EVP_enc_null' is never used. [unusedFunction]
+
+^
+src/ssl.c:11743:0: style: The function 'CyaSSL_EVP_get_digestbynid' is never used. [unusedFunction]
+
+^
+src/ssl.c:7341:0: style: The function 'CyaSSL_EVP_rc4' is never used. [unusedFunction]
+
+^
+src/ssl.c:11858:0: style: The function 'CyaSSL_EVP_ripemd160' is never used. [unusedFunction]
+
+^
+src/ssl.c:7239:0: style: The function 'CyaSSL_EVP_sha256' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/memory.c:84:0: style: The function 'CyaSSL_Free' is never used. [unusedFunction]
+
+^
+src/ssl.c:1045:0: style: The function 'CyaSSL_FreeArrays' is never used. [unusedFunction]
+
+^
+src/ssl.c:1203:0: style: The function 'CyaSSL_GetAeadMacSize' is never used. [unusedFunction]
+
+^
+src/ssl.c:1169:0: style: The function 'CyaSSL_GetBulkCipher' is never used. [unusedFunction]
+
+^
+src/ssl.c:1194:0: style: The function 'CyaSSL_GetCipherBlockSize' is never used. [unusedFunction]
+
+^
+src/ssl.c:1178:0: style: The function 'CyaSSL_GetCipherType' is never used. [unusedFunction]
+
+^
+src/ssl.c:1124:0: style: The function 'CyaSSL_GetClientWriteIV' is never used. [unusedFunction]
+
+^
+src/ssl.c:1115:0: style: The function 'CyaSSL_GetClientWriteKey' is never used. [unusedFunction]
+
+^
+src/io.c:1021:0: style: The function 'CyaSSL_GetCookieCtx' is never used. [unusedFunction]
+
+^
+src/ssl.c:1106:0: style: The function 'CyaSSL_GetDecryptVerifyCtx' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/hmac.c:671:0: style: The function 'CyaSSL_GetHmacMaxSize' is never used. [unusedFunction]
+
+^
+src/ssl.c:1233:0: style: The function 'CyaSSL_GetHmacSize' is never used. [unusedFunction]
+
+^
+src/io.c:977:0: style: The function 'CyaSSL_GetIOReadCtx' is never used. [unusedFunction]
+
+^
+src/io.c:986:0: style: The function 'CyaSSL_GetIOWriteCtx' is never used. [unusedFunction]
+
+^
+src/ssl.c:1160:0: style: The function 'CyaSSL_GetIVSize' is never used. [unusedFunction]
+
+^
+src/ssl.c:1151:0: style: The function 'CyaSSL_GetKeySize' is never used. [unusedFunction]
+
+^
+src/ssl.c:1083:0: style: The function 'CyaSSL_GetMacEncryptCtx' is never used. [unusedFunction]
+
+^
+src/ssl.c:1142:0: style: The function 'CyaSSL_GetServerWriteIV' is never used. [unusedFunction]
+
+^
+src/ssl.c:1133:0: style: The function 'CyaSSL_GetServerWriteKey' is never used. [unusedFunction]
+
+^
+src/ssl.c:1224:0: style: The function 'CyaSSL_GetSide' is never used. [unusedFunction]
+
+^
+src/ssl.c:7906:0: style: The function 'CyaSSL_HMAC' is never used. [unusedFunction]
+
+^
+src/ssl.c:11702:0: style: The function 'CyaSSL_HMAC_Final' is never used. [unusedFunction]
+
+^
+src/ssl.c:11649:0: style: The function 'CyaSSL_HMAC_Init' is never used. [unusedFunction]
+
+^
+src/ssl.c:11689:0: style: The function 'CyaSSL_HMAC_Update' is never used. [unusedFunction]
+
+^
+src/ssl.c:11735:0: style: The function 'CyaSSL_HMAC_cleanup' is never used. [unusedFunction]
+
+^
+src/ssl.c:1212:0: style: The function 'CyaSSL_IsTLSv1_1' is never used. [unusedFunction]
+
+^
+src/ssl.c:1037:0: style: The function 'CyaSSL_KeepArrays' is never used. [unusedFunction]
+
+^
+src/ssl.c:9372:0: style: The function 'CyaSSL_MD4_Final' is never used. [unusedFunction]
+
+^
+src/ssl.c:9353:0: style: The function 'CyaSSL_MD4_Init' is never used. [unusedFunction]
+
+^
+src/ssl.c:9364:0: style: The function 'CyaSSL_MD4_Update' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/memory.c:67:0: style: The function 'CyaSSL_Malloc' is never used. [unusedFunction]
+
+^
+src/ssl.c:9327:0: style: The function 'CyaSSL_OCSP_parse_url' is never used. [unusedFunction]
+
+^
+src/ssl.c:11944:0: style: The function 'CyaSSL_OPENSSL_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:9908:0: style: The function 'CyaSSL_PEM_def_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:11992:0: style: The function 'CyaSSL_PEM_read_bio_PrivateKey' is never used. [unusedFunction]
+
+^
+src/ssl.c:11972:0: style: The function 'CyaSSL_PEM_write_bio_DSAPrivateKey' is never used. [unusedFunction]
+
+^
+src/ssl.c:11952:0: style: The function 'CyaSSL_PEM_write_bio_RSAPrivateKey' is never used. [unusedFunction]
+
+^
+src/ssl.c:7964:0: style: The function 'CyaSSL_RAND_add' is never used. [unusedFunction]
+
+^
+src/ssl.c:10263:0: style: The function 'CyaSSL_RAND_bytes' is never used. [unusedFunction]
+
+^
+src/ssl.c:9453:0: style: The function 'CyaSSL_RAND_egd' is never used. [unusedFunction]
+
+^
+src/ssl.c:9427:0: style: The function 'CyaSSL_RAND_file_name' is never used. [unusedFunction]
+
+^
+src/ssl.c:9442:0: style: The function 'CyaSSL_RAND_load_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:9421:0: style: The function 'CyaSSL_RAND_screen' is never used. [unusedFunction]
+
+^
+src/ssl.c:10242:0: style: The function 'CyaSSL_RAND_seed' is never used. [unusedFunction]
+
+^
+src/ssl.c:7957:0: style: The function 'CyaSSL_RAND_status' is never used. [unusedFunction]
+
+^
+src/ssl.c:9435:0: style: The function 'CyaSSL_RAND_write_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:11601:0: style: The function 'CyaSSL_RSA_GenAdd' is never used. [unusedFunction]
+
+^
+src/ssl.c:12009:0: style: The function 'CyaSSL_RSA_LoadDer' is never used. [unusedFunction]
+
+^
+src/ssl.c:11395:0: style: The function 'CyaSSL_RSA_blinding_on' is never used. [unusedFunction]
+
+^
+src/ssl.c:11187:0: style: The function 'CyaSSL_RSA_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:6621:0: style: The function 'CyaSSL_RSA_generate_key' is never used. [unusedFunction]
+
+^
+src/ssl.c:11346:0: style: The function 'CyaSSL_RSA_generate_key_ex' is never used. [unusedFunction]
+
+^
+src/ssl.c:11153:0: style: The function 'CyaSSL_RSA_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:11421:0: style: The function 'CyaSSL_RSA_private_decrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:11585:0: style: The function 'CyaSSL_RSA_public_decrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:11406:0: style: The function 'CyaSSL_RSA_public_encrypt' is never used. [unusedFunction]
+
+^
+src/ssl.c:11503:0: style: The function 'CyaSSL_RSA_sign' is never used. [unusedFunction]
+
+^
+src/ssl.c:11436:0: style: The function 'CyaSSL_RSA_size' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/memory.c:92:0: style: The function 'CyaSSL_Realloc' is never used. [unusedFunction]
+
+^
+src/ssl.c:8885:0: style: The function 'CyaSSL_SESSION_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:10124:0: style: The function 'CyaSSL_SESSION_get_time' is never used. [unusedFunction]
+
+^
+src/ssl.c:10117:0: style: The function 'CyaSSL_SESSION_get_timeout' is never used. [unusedFunction]
+
+^
+src/ssl.c:7127:0: style: The function 'CyaSSL_SHA1_Final' is never used. [unusedFunction]
+
+^
+src/ssl.c:7112:0: style: The function 'CyaSSL_SHA1_Init' is never used. [unusedFunction]
+
+^
+src/ssl.c:7119:0: style: The function 'CyaSSL_SHA1_Update' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/memory.c:42:0: style: The function 'CyaSSL_SetAllocators' is never used. [unusedFunction]
+
+^
+src/ssl.c:3926:0: style: The function 'CyaSSL_SetCertCbCtx' is never used. [unusedFunction]
+
+^
+src/io.c:1015:0: style: The function 'CyaSSL_SetCookieCtx' is never used. [unusedFunction]
+
+^
+src/ssl.c:1099:0: style: The function 'CyaSSL_SetDecryptVerifyCtx' is never used. [unusedFunction]
+
+^
+src/io.c:965:0: style: The function 'CyaSSL_SetIOReadCtx' is never used. [unusedFunction]
+
+^
+src/io.c:995:0: style: The function 'CyaSSL_SetIOReadFlags' is never used. [unusedFunction]
+
+^
+src/io.c:953:0: style: The function 'CyaSSL_SetIORecv' is never used. [unusedFunction]
+
+^
+src/io.c:959:0: style: The function 'CyaSSL_SetIOSend' is never used. [unusedFunction]
+
+^
+src/io.c:971:0: style: The function 'CyaSSL_SetIOWriteCtx' is never used. [unusedFunction]
+
+^
+src/io.c:1001:0: style: The function 'CyaSSL_SetIOWriteFlags' is never used. [unusedFunction]
+
+^
+src/ssl.c:7741:0: style: The function 'CyaSSL_SetInternalIV' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/logging.c:53:0: style: The function 'CyaSSL_SetLoggingCb' is never used. [unusedFunction]
+
+^
+src/ssl.c:1076:0: style: The function 'CyaSSL_SetMacEncryptCtx' is never used. [unusedFunction]
+
+^
+src/ssl.c:1539:0: style: The function 'CyaSSL_SetMinVersion' is never used. [unusedFunction]
+
+^
+src/ssl.c:4037:0: style: The function 'CyaSSL_SetServerID' is never used. [unusedFunction]
+
+^
+src/ssl.c:1580:0: style: The function 'CyaSSL_SetVersion' is never used. [unusedFunction]
+
+^
+src/ssl.c:7686:0: style: The function 'CyaSSL_StoreExternalIV' is never used. [unusedFunction]
+
+^
+src/ssl.c:6389:0: style: The function 'CyaSSL_UnloadCertsKeys' is never used. [unusedFunction]
+
+^
+src/ssl.c:9785:0: style: The function 'CyaSSL_X509_CRL_get_REVOKED' is never used. [unusedFunction]
+
+^
+src/ssl.c:9697:0: style: The function 'CyaSSL_X509_CRL_get_lastUpdate' is never used. [unusedFunction]
+
+^
+src/ssl.c:9704:0: style: The function 'CyaSSL_X509_CRL_get_nextUpdate' is never used. [unusedFunction]
+
+^
+src/ssl.c:9739:0: style: The function 'CyaSSL_X509_CRL_verify' is never used. [unusedFunction]
+
+^
+src/ssl.c:9524:0: style: The function 'CyaSSL_X509_LOOKUP_add_dir' is never used. [unusedFunction]
+
+^
+src/ssl.c:9550:0: style: The function 'CyaSSL_X509_LOOKUP_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:9544:0: style: The function 'CyaSSL_X509_LOOKUP_hash_dir' is never used. [unusedFunction]
+
+^
+src/ssl.c:9534:0: style: The function 'CyaSSL_X509_LOOKUP_load_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:9754:0: style: The function 'CyaSSL_X509_OBJECT_free_contents' is never used. [unusedFunction]
+
+^
+src/ssl.c:9678:0: style: The function 'CyaSSL_X509_STORE_CTX_cleanup' is never used. [unusedFunction]
+
+^
+src/ssl.c:9666:0: style: The function 'CyaSSL_X509_STORE_CTX_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:6635:0: style: The function 'CyaSSL_X509_STORE_CTX_get_current_cert' is never used. [unusedFunction]
+
+^
+src/ssl.c:6643:0: style: The function 'CyaSSL_X509_STORE_CTX_get_error' is never used. [unusedFunction]
+
+^
+src/ssl.c:6651:0: style: The function 'CyaSSL_X509_STORE_CTX_get_error_depth' is never used. [unusedFunction]
+
+^
+src/ssl.c:9835:0: style: The function 'CyaSSL_X509_STORE_CTX_get_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:9635:0: style: The function 'CyaSSL_X509_STORE_CTX_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:9747:0: style: The function 'CyaSSL_X509_STORE_CTX_set_error' is never used. [unusedFunction]
+
+^
+src/ssl.c:9566:0: style: The function 'CyaSSL_X509_STORE_add_cert' is never used. [unusedFunction]
+
+^
+src/ssl.c:9557:0: style: The function 'CyaSSL_X509_STORE_add_lookup' is never used. [unusedFunction]
+
+^
+src/ssl.c:9624:0: style: The function 'CyaSSL_X509_STORE_get_by_subject' is never used. [unusedFunction]
+
+^
+src/ssl.c:9590:0: style: The function 'CyaSSL_X509_STORE_new' is never used. [unusedFunction]
+
+^
+src/ssl.c:9617:0: style: The function 'CyaSSL_X509_STORE_set_default_paths' is never used. [unusedFunction]
+
+^
+src/ssl.c:9770:0: style: The function 'CyaSSL_X509_cmp_current_time' is never used. [unusedFunction]
+
+^
+src/ssl.c:9312:0: style: The function 'CyaSSL_X509_free' is never used. [unusedFunction]
+
+^
+src/ssl.c:9712:0: style: The function 'CyaSSL_X509_get_pubkey' is never used. [unusedFunction]
+
+^
+src/ssl.c:9802:0: style: The function 'CyaSSL_X509_get_serialNumber' is never used. [unusedFunction]
+
+^
+src/ssl.c:9684:0: style: The function 'CyaSSL_X509_verify_cert' is never used. [unusedFunction]
+
+^
+src/ssl.c:9516:0: style: The function 'CyaSSL_X509_verify_cert_error_string' is never used. [unusedFunction]
+
+^
+src/ssl.c:6441:0: style: The function 'CyaSSL_add_all_algorithms' is never used. [unusedFunction]
+
+^
+src/ssl.c:11839:0: style: The function 'CyaSSL_aes_ctr_iv' is never used. [unusedFunction]
+
+^
+src/ssl.c:9894:0: style: The function 'CyaSSL_alert_desc_string_long' is never used. [unusedFunction]
+
+^
+src/ssl.c:9887:0: style: The function 'CyaSSL_alert_type_string_long' is never used. [unusedFunction]
+
+^
+src/ssl.c:8045:0: style: The function 'CyaSSL_cleanup_all_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:1509:0: style: The function 'CyaSSL_connect_cert' is never used. [unusedFunction]
+
+^
+src/ssl.c:10106:0: style: The function 'CyaSSL_d2i_SSL_SESSION' is never used. [unusedFunction]
+
+^
+src/ssl.c:312:0: style: The function 'CyaSSL_dtls_get_peer' is never used. [unusedFunction]
+
+^
+src/ssl.c:4871:0: style: The function 'CyaSSL_dtls_set_timeout_init' is never used. [unusedFunction]
+
+^
+src/ssl.c:4889:0: style: The function 'CyaSSL_dtls_set_timeout_max' is never used. [unusedFunction]
+
+^
+swig/cyassl_adds.c:177:0: style: The function 'CyaSSL_error_string' is never used. [unusedFunction]
+
+^
+src/ssl.c:5525:0: style: The function 'CyaSSL_flush_sessions' is never used. [unusedFunction]
+
+^
+src/ssl.c:9305:0: style: The function 'CyaSSL_get1_session' is never used. [unusedFunction]
+
+^
+src/ssl.c:973:0: style: The function 'CyaSSL_get_alert_history' is never used. [unusedFunction]
+
+^
+src/ssl.c:9286:0: style: The function 'CyaSSL_get_cipher' is never used. [unusedFunction]
+
+^
+src/ssl.c:8921:0: style: The function 'CyaSSL_get_current_cipher_suite' is never used. [unusedFunction]
+
+^
+src/ssl.c:9854:0: style: The function 'CyaSSL_get_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:9848:0: style: The function 'CyaSSL_get_ex_data_X509_STORE_CTX_idx' is never used. [unusedFunction]
+
+^
+src/ssl.c:9482:0: style: The function 'CyaSSL_get_ex_new_index' is never used. [unusedFunction]
+
+^
+src/ssl.c:6509:0: style: The function 'CyaSSL_get_keyblock_size' is never used. [unusedFunction]
+
+^
+src/ssl.c:6520:0: style: The function 'CyaSSL_get_keys' is never used. [unusedFunction]
+
+^
+src/ssl.c:6262:0: style: The function 'CyaSSL_get_psk_identity' is never used. [unusedFunction]
+
+^
+src/ssl.c:6251:0: style: The function 'CyaSSL_get_psk_identity_hint' is never used. [unusedFunction]
+
+^
+src/ssl.c:8871:0: style: The function 'CyaSSL_get_shutdown' is never used. [unusedFunction]
+
+^
+src/ssl.c:8891:0: style: The function 'CyaSSL_get_version' is never used. [unusedFunction]
+
+^
+src/ssl.c:10098:0: style: The function 'CyaSSL_i2d_SSL_SESSION' is never used. [unusedFunction]
+
+^
+src/ssl.c:6562:0: style: The function 'CyaSSL_is_init_finished' is never used. [unusedFunction]
+
+^
+src/ssl.c:4350:0: style: The function 'CyaSSL_library_init' is never used. [unusedFunction]
+
+^
+src/ssl.c:4346:0: style: The function 'CyaSSL_load_error_strings' is never used. [unusedFunction]
+
+^
+src/tls.c:501:0: style: The function 'CyaSSL_make_eap_keys' is never used. [unusedFunction]
+
+^
+src/ssl.c:10560:0: style: The function 'CyaSSL_mask_bits' is never used. [unusedFunction]
+
+^
+src/ssl.c:6920:0: style: The function 'CyaSSL_num_locks' is never used. [unusedFunction]
+
+^
+src/ssl.c:524:0: style: The function 'CyaSSL_peek' is never used. [unusedFunction]
+
+^
+src/ssl.c:1486:0: style: The function 'CyaSSL_pending' is never used. [unusedFunction]
+
+^
+src/ssl.c:895:0: style: The function 'CyaSSL_recv' is never used. [unusedFunction]
+
+^
+src/ssl.c:873:0: style: The function 'CyaSSL_send' is never used. [unusedFunction]
+
+^
+src/ssl.c:6539:0: style: The function 'CyaSSL_set_accept_state' is never used. [unusedFunction]
+
+^
+src/ssl.c:6474:0: style: The function 'CyaSSL_set_bio' is never used. [unusedFunction]
+
+^
+src/ssl.c:4852:0: style: The function 'CyaSSL_set_cipher_list' is never used. [unusedFunction]
+
+^
+src/ssl.c:5953:0: style: The function 'CyaSSL_set_compression' is never used. [unusedFunction]
+
+^
+src/ssl.c:8864:0: style: The function 'CyaSSL_set_connect_state' is never used. [unusedFunction]
+
+^
+src/ssl.c:9494:0: style: The function 'CyaSSL_set_dynlock_create_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:9508:0: style: The function 'CyaSSL_set_dynlock_destroy_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:9501:0: style: The function 'CyaSSL_set_dynlock_lock_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:8837:0: style: The function 'CyaSSL_set_ex_data' is never used. [unusedFunction]
+
+^
+src/ssl.c:1527:0: style: The function 'CyaSSL_set_group_messages' is never used. [unusedFunction]
+
+^
+src/ssl.c:6930:0: style: The function 'CyaSSL_set_id_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:6925:0: style: The function 'CyaSSL_set_locking_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:6206:0: style: The function 'CyaSSL_set_psk_client_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:6233:0: style: The function 'CyaSSL_set_psk_server_callback' is never used. [unusedFunction]
+
+^
+src/ssl.c:6466:0: style: The function 'CyaSSL_set_quiet_shutdown' is never used. [unusedFunction]
+
+^
+src/ssl.c:8854:0: style: The function 'CyaSSL_set_session_id_context' is never used. [unusedFunction]
+
+^
+src/ssl.c:6583:0: style: The function 'CyaSSL_set_shutdown' is never used. [unusedFunction]
+
+^
+src/ssl.c:5534:0: style: The function 'CyaSSL_set_timeout' is never used. [unusedFunction]
+
+^
+src/ssl.c:3905:0: style: The function 'CyaSSL_set_verify' is never used. [unusedFunction]
+
+^
+src/ssl.c:9777:0: style: The function 'CyaSSL_sk_X509_REVOKED_num' is never used. [unusedFunction]
+
+^
+src/ssl.c:9792:0: style: The function 'CyaSSL_sk_X509_REVOKED_value' is never used. [unusedFunction]
+
+^
+src/ssl.c:10041:0: style: The function 'CyaSSL_sk_num' is never used. [unusedFunction]
+
+^
+src/ssl.c:10048:0: style: The function 'CyaSSL_sk_value' is never used. [unusedFunction]
+
+^
+src/ssl.c:9901:0: style: The function 'CyaSSL_state_string_long' is never used. [unusedFunction]
+
+^
+swig/cyassl_adds.c:165:0: style: The function 'CyaSSL_swig_connect' is never used. [unusedFunction]
+
+^
+src/ssl.c:3853:0: style: The function 'CyaSSL_use_RSAPrivateKey_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:6361:0: style: The function 'CyaSSL_use_certificate_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:6378:0: style: The function 'CyaSSL_use_certificate_chain_buffer' is never used. [unusedFunction]
+
+^
+src/ssl.c:3801:0: style: The function 'CyaSSL_use_certificate_chain_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:3779:0: style: The function 'CyaSSL_use_certificate_file' is never used. [unusedFunction]
+
+^
+src/ssl.c:6286:0: style: The function 'CyaSSL_use_psk_identity_hint' is never used. [unusedFunction]
+
+^
+src/ssl.c:983:0: style: The function 'CyaSSL_want_read' is never used. [unusedFunction]
+
+^
+src/ssl.c:994:0: style: The function 'CyaSSL_want_write' is never used. [unusedFunction]
+
+^
+src/ssl.c:5971:0: style: The function 'CyaSSL_writev' is never used. [unusedFunction]
+
+^
+src/ssl.c:7048:0: style: The function 'CyaSSLeay' is never used. [unusedFunction]
+
+^
+src/ssl.c:7054:0: style: The function 'CyaSSLeay_version' is never used. [unusedFunction]
+
+^
+src/ssl.c:9339:0: style: The function 'CyaSSLv2_client_method' is never used. [unusedFunction]
+
+^
+src/ssl.c:9345:0: style: The function 'CyaSSLv2_server_method' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/LPC43xx/time-LCP43xx.c:90:0: style: The function 'Cyassl_MDK_gmtime' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:99:0: style: The function 'Cyassl_accept' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:72:0: style: The function 'Cyassl_connect' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:123:0: style: The function 'Cyassl_recv' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:145:0: style: The function 'Cyassl_send' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:172:0: style: The function 'Cyassl_sleep' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/cyassl_MDK_ARM.c:179:0: style: The function 'Cyassl_tcp_select' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/des3.c:1371:0: style: The function 'Des_EcbEncrypt' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:1375:0: style: The function 'DsaPublicKeyDecode' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:6638:0: style: The function 'EccKeyToDer' is never used. [unusedFunction]
+
+^
+src/io.c:859:0: style: The function 'EmbedOcspLookup' is never used. [unusedFunction]
+
+^
+src/io.c:940:0: style: The function 'EmbedOcspRespFree' is never used. [unusedFunction]
+
+^
+swig/cyassl_adds.c:230:0: style: The function 'FillSignStr' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/misc.c:175:0: style: The function 'ForceZero' is never used. [unusedFunction]
+
+^
+src/ocsp.c:73:0: style: The function 'FreeOCSP' is never used. [unusedFunction]
+
+^
+src/internal.c:1468:0: style: The function 'FreeX509' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:2897:0: style: The function 'GetCTC_HashOID' is never used. [unusedFunction]
+
+^
+swig/cyassl_adds.c:185:0: style: The function 'GetRng' is never used. [unusedFunction]
+
+^
+swig/cyassl_adds.c:199:0: style: The function 'GetRsaPrivateKey' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/hmac.c:586:0: style: The function 'HmacFreeCavium' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/hmac.c:564:0: style: The function 'HmacInitCavium' is never used. [unusedFunction]
+
+^
+src/ocsp.c:35:0: style: The function 'InitOCSP' is never used. [unusedFunction]
+
+^
+src/internal.c:1426:0: style: The function 'InitX509' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/rsa.c:581:0: style: The function 'MakeRsaKey' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/md2.c:133:0: style: The function 'Md2Hash' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:1463:0: style: The function 'PKCS7_DecodeEnvelopedData' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:207:0: style: The function 'PKCS7_EncodeData' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:1159:0: style: The function 'PKCS7_EncodeEnvelopedData' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:337:0: style: The function 'PKCS7_EncodeSignedData' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:200:0: style: The function 'PKCS7_Free' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/pkcs7.c:683:0: style: The function 'PKCS7_VerifySignedData' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/poly1305.c:329:0: style: The function 'Poly1305Final' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/poly1305.c:259:0: style: The function 'Poly1305SetKey' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/poly1305.c:503:0: style: The function 'Poly1305Update' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/rsa.c:482:0: style: The function 'RsaFlattenPublicKey' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/rsa.c:712:0: style: The function 'RsaFreeCavium' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/rsa.c:696:0: style: The function 'RsaInitCavium' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:4627:0: style: The function 'RsaKeyToDer' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:1240:0: style: The function 'RsaPublicKeyDecodeRaw' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:6394:0: style: The function 'SetIssuerBuffer' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:6351:0: style: The function 'SetSubject' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/asn.c:6402:0: style: The function 'SetSubjectBuffer' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/sha512.c:513:0: style: The function 'Sha384Hash' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/sha512.c:306:0: style: The function 'Sha512Hash' is never used. [unusedFunction]
+
+^
+src/tls.c:2037:0: style: The function 'TLSX_GetRequestSize' is never used. [unusedFunction]
+
+^
+src/tls.c:2113:0: style: The function 'TLSX_GetResponseSize' is never used. [unusedFunction]
+
+^
+src/tls.c:2149:0: style: The function 'TLSX_Parse' is never used. [unusedFunction]
+
+^
+src/tls.c:1093:0: style: The function 'TLSX_SNI_GetFromBuffer' is never used. [unusedFunction]
+
+^
+src/tls.c:1068:0: style: The function 'TLSX_SNI_GetRequest' is never used. [unusedFunction]
+
+^
+src/tls.c:1084:0: style: The function 'TLSX_SNI_SetOptions' is never used. [unusedFunction]
+
+^
+src/tls.c:933:0: style: The function 'TLSX_SNI_Status' is never used. [unusedFunction]
+
+^
+src/tls.c:1818:0: style: The function 'TLSX_SessionTicket_Create' is never used. [unusedFunction]
+
+^
+src/tls.c:1837:0: style: The function 'TLSX_SessionTicket_Free' is never used. [unusedFunction]
+
+^
+src/tls.c:1729:0: style: The function 'TLSX_UseSecureRenegotiation' is never used. [unusedFunction]
+
+^
+src/tls.c:2063:0: style: The function 'TLSX_WriteRequest' is never used. [unusedFunction]
+
+^
+src/tls.c:2129:0: style: The function 'TLSX_WriteResponse' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:119:0: style: The function '_sys_close' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:244:0: style: The function '_sys_command_string' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:208:0: style: The function '_sys_ensure' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:251:0: style: The function '_sys_exit' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:222:0: style: The function '_sys_flen' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:184:0: style: The function '_sys_istty' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:98:0: style: The function '_sys_open' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:156:0: style: The function '_sys_read' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:194:0: style: The function '_sys_seek' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:237:0: style: The function '_sys_tmpnam' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:133:0: style: The function '_sys_write' is never used. [unusedFunction]
+
+^
+IDE/MDK-ARM/MDK-ARM/CyaSSL/Retarget.c:68:0: style: The function '_ttywrch' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4030:0: style: The function 'ecc_ctx_get_own_salt' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4167:0: style: The function 'ecc_ctx_new' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4061:0: style: The function 'ecc_ctx_set_info' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4075:0: style: The function 'ecc_ctx_set_peer_salt' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4381:0: style: The function 'ecc_decrypt' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:4229:0: style: The function 'ecc_encrypt' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/ecc.c:2224:0: style: The function 'ecc_export_x963_ex' is never used. [unusedFunction]
+
+^
+IDE/MDK5-ARM/Projects/CyaSSL-Full/shell.c:511:0: style: The function 'exit_command' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/port/pic32/pic32mz-hash.c:150:0: style: The function 'fillBuff' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:2395:0: style: The function 'mp_reduce_2k' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:2435:0: style: The function 'mp_reduce_2k_setup' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:1650:0: style: The function 'mp_reduce_is_2k' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:1627:0: style: The function 'mp_reduce_is_2k_l' is never used. [unusedFunction]
+
+^
+src/ssl.c:101:0: style: The function 'mystrnstr' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:3173:0: style: The function 's_mp_exptmod' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:3563:0: style: The function 's_mp_mul_high_digs' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/integer.c:2995:0: style: The function 's_mp_sqr' is never used. [unusedFunction]
+
+^
+src/sniffer.c:451:0: style: The function 'ssl_FreeSniffer' is never used. [unusedFunction]
+
+^
+src/sniffer.c:355:0: style: The function 'ssl_InitSniffer' is never used. [unusedFunction]
+
+^
+src/sniffer.c:1157:0: style: The function 'ssl_SetNamedPrivateKey' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/wolfcrypt_first.c:46:0: style: The function 'wolfCrypt_FIPS_first' is never used. [unusedFunction]
+
+^
+ctaocrypt/src/wolfcrypt_last.c:41:0: style: The function 'wolfCrypt_FIPS_last' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
